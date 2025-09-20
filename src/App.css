@@ -1,0 +1,10 @@
+.app {
+    background: var(--bg);
+    color: var(--fg);
+    display: flex;
+    justify-content: center;
+    max-width: 100vw;
+    padding: 20px;
+    height: 100vh;
+    transition: all .3s;
+}
