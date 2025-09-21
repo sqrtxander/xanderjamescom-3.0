@@ -16,6 +16,8 @@
 	--orange: #ffbd5e;
 	--purple: #bd5eff;
 
+    --header-height: 40px;
+
 	font-family: "Iosevka Web", monospace;
 	line-height: 1.5;
 	font-weight: 400;

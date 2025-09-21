@@ -1,5 +1,5 @@
 .headerbar {
-	height: 40px;
+	height: var(--header-height);
 	width: 100%;
 	background: var(--red);
 	display: flex;

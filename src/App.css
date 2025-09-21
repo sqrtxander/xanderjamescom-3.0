@@ -3,9 +3,35 @@
 	color: var(--fg);
 	max-width: 100vw;
 	display: flex;
-	min-height: 100vh;
+    min-height: calc(100vh - 2em);
+	height: fit-content;
+    padding-bottom: 2em;
 	transition: all 0.3s;
 	justify-content: top;
 	align-items: center;
 	flex-direction: column;
 }
+
+.vertstack {
+	display: flex;
+	flex-direction: column;
+}
+
+.horcenter {
+    display: flex;
+    align-items: center;
+}
+
+.tiny {
+    font-size: 8pt;
+}
+
+.huge {
+    font-size: 96pt;
+}
+
+.noleading {
+	margin-top: 0em;
+	margin-bottom: 0em;
+}
+

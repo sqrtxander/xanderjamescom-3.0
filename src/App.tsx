@@ -8,6 +8,7 @@ import Header from "./components/Header/Header";
 
 // pages
 import HomePage from "./pages/HomePage/HomePage";
+import NotFound from "./pages/NotFound/NotFound";
 
 function App() {
 	const defaultDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
@@ -27,6 +28,7 @@ function App() {
 			<BrowserRouter>
 				<Routes>
 					<Route path="/" element={<HomePage />} />
+					<Route path="*" element={<NotFound />} />
 				</Routes>
 			</BrowserRouter>
 		</div>

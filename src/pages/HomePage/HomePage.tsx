@@ -1,25 +1,25 @@
 import "./HomePage.css";
 
-const HomePage = () => {
+function HomePage() {
 	return (
 		<div className="content">
 			<h1 className="title">Hello,</h1>
 			<div className="codeblock">
-				<p className="code pwd">~</p>
-				<p className="code codeline">
+				<p className="noleading pwd">~</p>
+				<p className="noleading codeline">
 					<span className="cmd">whoami</span>
 				</p>
-				<p className="code codeout">xander</p>
+				<p className="noleading codeout">xander</p>
 
-				<p className="code pwd">~</p>
-				<p className="code codeline">
+				<p className="noleading pwd">~</p>
+				<p className="noleading codeline">
 					<span className="cmd">cd</span> about
 				</p>
-				<p className="code pwd">~/about</p>
-				<p className="code codeline">
+				<p className="noleading pwd">~/about</p>
+				<p className="noleading codeline">
 					<span className="cmd">cat</span> README.md
 				</p>
-				<p className="code codeout">
+				<p className="noleading codeout">
 					# About Me
 					<br />
 					<br />- I am an undergraduate student studying mathematics and
@@ -31,8 +31,8 @@ const HomePage = () => {
 					<br />- I love both participating in and setting trivia, especially
 					that where answers are connected
 				</p>
-				<p className="code pwd">~/about</p>
-				<p className="code codeline"></p>
+				<p className="noleading pwd">~/about</p>
+				<p className="noleading codeline"></p>
 			</div>
 		</div>
 	);
