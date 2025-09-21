@@ -9,7 +9,7 @@ type headerparams = {
 function Header({ theme, switchTheme }: headerparams) {
 	return (
 		<div className="headerbar">
-			<p className="headertitle">&gt; xanderjames</p>
+			<a href="/" className="headertitle">&gt; xanderjames</a>
 			<button className="themeswitcher" onClick={switchTheme}>
 				<IconContext.Provider value={{ color: "var(--bg)", className: "icon" }}>
 					{theme === "dark" ? <FiSun /> : <FiMoon />}
