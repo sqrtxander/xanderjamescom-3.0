@@ -32,7 +32,6 @@ jobs:
             git pull origin main
             bun install
             bun run build
-            sudo systemctl restart my-app
 
 
 
