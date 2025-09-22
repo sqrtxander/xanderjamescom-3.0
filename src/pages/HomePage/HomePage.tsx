@@ -3,7 +3,7 @@ import "./HomePage.css";
 function HomePage() {
 	return (
 		<div className="content">
-			<h1 className="title">Hello,</h1>
+			<h1>Hello,</h1>
 			<div className="codeblock">
 				<p className="noleading pwd">~</p>
 				<p className="noleading codeline">
@@ -29,13 +29,16 @@ function HomePage() {
 					<br />- I enjoy programming (when I have ideas)
 					<br />- I can solve a Rubik's Cube blindfolded
 					<br />- I love both participating in and setting trivia, especially
-					that where answers are connected
+					where answers are connected
 				</p>
 				<p className="noleading pwd">~/about</p>
 				<p className="noleading codeline"></p>
 			</div>
+			<h1>My Projects</h1>
+            <h2><a href="/purelyrelate">Purely Relate</a></h2>
+            <p>Relating trivia based on the BBC quiz show Only Connect</p>
 		</div>
 	);
-};
+}
 
 export default HomePage;

@@ -55,9 +55,14 @@ h4,
 h5,
 h6 {
 	font-weight: 400;
+    margin-bottom: 0px;
 }
 
 * {
 	font-family: "Iosevka Web", monospace;
 	font-weight: 400;
+}
+
+a {
+    color: var(--fg);
 }

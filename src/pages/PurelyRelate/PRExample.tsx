@@ -7,12 +7,14 @@ function PRExample() {
 
 			<h2>Round 1: Relations</h2>
 			<Round1
+                glyph="O"
 				clues={["Jade", "Mint", "Chartreuse", "Emerald"]}
 				relation="Shades of green"
 			/>
 
 			<h2>Round 2: Progressions</h2>
 			<Round2
+                glyph="Z"
 				clues={[
 					"US Department of Defence building",
 					"Honeycomb cell",
@@ -24,6 +26,7 @@ function PRExample() {
 
 			<h2>Round 3: Relating Surfaces</h2>
 			<Round3
+                glyph="J"
 				groups={[
 					{
 						clues: ["Non", "Nei", "Nein", "Nee"],

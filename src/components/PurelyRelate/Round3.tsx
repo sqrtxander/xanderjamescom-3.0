@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import SurfaceCard from "./SurfaceCard";
 import AnswerCard from "./AnswerCard";
+import Glyph from "./Glyph";
 
 type group = {
 	clues: [string, string, string, string];
@@ -49,10 +50,11 @@ function shuffle(state: cell[], start: number) {
 }
 
 type round3Props = {
-    groups: groups;
-}
+	glyph: "O" | "J" | "I" | "T" | "L" | "Z";
+	groups: groups;
+};
 
-function Round3({groups}: round3Props) {
+function Round3({ glyph, groups }: round3Props) {
 	const [selected, setSelected] = useState<number[]>([]);
 	const [groupsFound, setGroupsFound] = useState(0);
 	const [surface, setSurface] = useState(initSurface(groups));
@@ -193,7 +195,7 @@ function Round3({groups}: round3Props) {
 						front="Show relation"
 						back={surface[i].relation}
 						className="r3"
-                        borderColor="var(--purple)"
+						borderColor="var(--purple)"
 					/>,
 				);
 			}
@@ -203,11 +205,18 @@ function Round3({groups}: round3Props) {
 
 	return (
 		<div className="round3">
-            <div className="round3buttons">
-                <button className="ghostborder" onClick={solveSurface}>SOLVE</button>
-                <button className="ghostborder" onClick={resetSurface}>RESET</button>
-            </div>
-			<div className={`round3grid ${groupsFound === 4 ? "solved" : ""}`}>{renderSurface()}</div>
+            <Glyph glyphID={glyph} />
+			<div className="round3buttons">
+				<button className="ghostborder" onClick={solveSurface}>
+					SOLVE
+				</button>
+				<button className="ghostborder" onClick={resetSurface}>
+					RESET
+				</button>
+			</div>
+			<div className={`round3grid ${groupsFound === 4 ? "solved" : ""}`}>
+				{renderSurface()}
+			</div>
 		</div>
 	);
 }
