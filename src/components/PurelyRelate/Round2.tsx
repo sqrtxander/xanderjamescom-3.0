@@ -1,7 +1,6 @@
 import "./PurelyRelate.css";
 import ClueCard from "./ClueCard";
 import AnswerCard from "./AnswerCard";
-import LabelCard from "./LabelCard";
 
 type round2Props = {
 	clues: [string, string, string, string];

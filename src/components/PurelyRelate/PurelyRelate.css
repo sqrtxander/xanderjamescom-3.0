@@ -7,7 +7,8 @@
 .cluecard,
 .answercard,
 .surfacecard,
-.labelcard {
+.labelcard,
+.ghostborder {
 	border: 2px solid var(--fg);
 	border-radius: 10px;
 	width: 100%;
@@ -29,20 +30,23 @@
 
 .cluecard:hover,
 .answercard:hover,
-.surfacecard:hover {
+.surfacecard:hover,
+.ghostborder:hover {
 	background: color-mix(in srgb, var(--fg) 20%, transparent);
     cursor: pointer;
 }
 
 .cluecard:active,
 .answercard:active,
-.surfacecard:active {
+.surfacecard:active,
+.ghostborder:active {
 	background: color-mix(in srgb, var(--fg) 40%, transparent);
 }
 
 .cluecard:disabled,
 .answercard:disabled,
-.surfacecard:disabled {
+.surfacecard:disabled,
+.ghostborder:disabled {
 	background: none;
     cursor: default;
 }

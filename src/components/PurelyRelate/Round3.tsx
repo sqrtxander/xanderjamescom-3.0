@@ -203,6 +203,10 @@ function Round3({groups}: round3Props) {
 
 	return (
 		<div className="round3">
+            <div className="round3buttons">
+                <button className="ghostborder" onClick={solveSurface}>SOLVE</button>
+                <button className="ghostborder" onClick={resetSurface}>RESET</button>
+            </div>
 			<div className={`round3grid ${groupsFound === 4 ? "solved" : ""}`}>{renderSurface()}</div>
 		</div>
 	);
