@@ -8,6 +8,7 @@ import Header from "./components/Header/Header";
 
 // pages
 import HomePage from "./pages/HomePage/HomePage";
+import PurelyRelate from "./pages/PurelyRelate/PurelyRelate";
 import NotFound from "./pages/NotFound/NotFound";
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
 			<BrowserRouter>
 				<Routes>
 					<Route path="/" element={<HomePage />} />
+					<Route path="/purelyrelate/" element={<PurelyRelate />} />
 					<Route path="*" element={<NotFound />} />
 				</Routes>
 			</BrowserRouter>

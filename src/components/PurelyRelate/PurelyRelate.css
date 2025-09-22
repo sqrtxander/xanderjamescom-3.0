@@ -1,0 +1,90 @@
+.cluecard.r1,
+.cluecard.r2,
+.surfacecard {
+	aspect-ratio: 7 / 4;
+}
+
+.cluecard,
+.answercard,
+.surfacecard,
+.labelcard {
+	border: 2px solid var(--fg);
+	border-radius: 10px;
+	width: 100%;
+	color: var(--fg);
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	background: none;
+	transition: background 0.3s;
+	font-size: 11pt;
+}
+
+.answercard {
+	grid-column-start: 1;
+	grid-column-end: 5;
+	height: fit-content;
+}
+
+.cluecard:hover,
+.answercard:hover,
+.surfacecard:hover {
+	background: color-mix(in srgb, var(--fg) 20%, transparent);
+    cursor: pointer;
+}
+
+.cluecard:active,
+.answercard:active,
+.surfacecard:active {
+	background: color-mix(in srgb, var(--fg) 40%, transparent);
+}
+
+.cluecard:disabled,
+.answercard:disabled,
+.surfacecard:disabled {
+	background: none;
+    cursor: default;
+}
+
+.explanation {
+	font-style: italic;
+}
+
+.big {
+	font-size: 36pt;
+}
+
+.round1,
+.round2,
+.round3,
+.round4 {
+    margin-bottom: 5em;
+}
+
+.round1,
+.round2 {
+	width: 100%;
+	display: grid;
+	gap: 1em;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(2, max-content);
+}
+
+.round4 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.round3grid {
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.round3grid.solved {
+    grid-template-rows: repeat(8, max-content);
+}
