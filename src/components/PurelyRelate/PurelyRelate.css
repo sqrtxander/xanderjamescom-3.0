@@ -51,6 +51,11 @@
     cursor: default;
 }
 
+.round3buttons > .ghostborder:disabled {
+	border: 2px solid color-mix(in srgb, var(--fg) 40%, var(--bg));
+    transition: border 0.2s;
+}
+
 .explanation {
 	font-style: italic;
 }

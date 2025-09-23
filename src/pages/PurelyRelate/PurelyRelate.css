@@ -1,0 +1,14 @@
+.episodebuttonsgrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1em;
+}
+
+.episodebutton {
+    aspect-ratio: 7/4;
+    width: 100%
+}
+
+a.episodebutton {
+    text-decoration: none;
+}

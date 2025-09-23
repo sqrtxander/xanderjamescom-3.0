@@ -12,12 +12,21 @@
 	flex-direction: column;
 }
 
-.vertstack {
+.vstack {
 	display: flex;
 	flex-direction: column;
 }
 
-.horcenter {
+.hstack {
+	display: flex;
+	flex-direction: row;
+}
+
+.wide {
+    width: 80%;
+}
+
+.hcenter {
     display: flex;
     align-items: center;
 }
@@ -33,5 +42,32 @@
 .noleading {
 	margin-top: 0em;
 	margin-bottom: 0em;
+}
+
+.ghostbutton {
+	border: 2px solid var(--fg);
+	border-radius: 10px;
+	color: var(--fg);
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	background: none;
+	transition: background 0.3s;
+	font-size: 11pt;
+}
+
+.ghostbutton:hover {
+	background: color-mix(in srgb, var(--fg) 20%, transparent);
+    cursor: pointer;
+}
+
+.ghostbutton:active {
+	background: color-mix(in srgb, var(--fg) 40%, transparent);
+}
+
+.ghostbutton:disabled {
+	background: none;
+    cursor: default;
 }
 

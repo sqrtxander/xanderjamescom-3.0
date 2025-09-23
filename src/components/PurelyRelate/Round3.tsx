@@ -205,13 +205,21 @@ function Round3({ glyph, groups }: round3Props) {
 
 	return (
 		<div className="round3">
-            <Glyph glyphID={glyph} />
+			<Glyph glyphID={glyph} />
 			<div className="round3buttons">
-				<button className="ghostborder" onClick={solveSurface}>
-					SOLVE
+				<button
+					className="ghostborder"
+					onClick={solveSurface}
+					disabled={groupsFound === 4}
+				>
+					Solve
 				</button>
-				<button className="ghostborder" onClick={resetSurface}>
-					RESET
+				<button
+					className="ghostborder"
+					onClick={resetSurface}
+					disabled={groupsFound !== 4}
+				>
+					Reset
 				</button>
 			</div>
 			<div className={`round3grid ${groupsFound === 4 ? "solved" : ""}`}>
