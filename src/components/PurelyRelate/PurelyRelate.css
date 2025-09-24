@@ -24,6 +24,7 @@
     white-space: pre-wrap;
     word-wrap: break-word;
     overflow-wrap: break-word;
+    box-sizing: border-box;
 }
 
 pre {
@@ -119,6 +120,12 @@ pre {
 .size-s .answercard {
 	grid-column-start: 1;
 	grid-column-end: 3;
+	height: fit-content;
+}
+
+.round3grid > .answercard {
+	grid-column-start: 1;
+	grid-column-end: 5;
 	height: fit-content;
 }
 
