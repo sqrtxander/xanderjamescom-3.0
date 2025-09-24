@@ -33,6 +33,11 @@ pre {
     overflow-wrap: inherit;
 }
 
+.big pre {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 .cluecard:hover,
 .answercard:hover,
 .surfacecard:hover,
@@ -63,10 +68,6 @@ pre {
 
 .explanation {
 	font-style: italic;
-}
-
-.big {
-	font-size: 36pt;
 }
 
 .round3buttons {
@@ -121,6 +122,15 @@ pre {
 	grid-column-start: 1;
 	grid-column-end: 3;
 	height: fit-content;
+}
+
+.big {
+	font-size: 60pt;
+}
+
+.size-xs .big,
+.size-s .big {
+	font-size: 36pt;
 }
 
 .round3grid > .answercard {

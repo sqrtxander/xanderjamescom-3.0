@@ -3,27 +3,30 @@ import { type CSSProperties } from "react";
 
 type clueCardProps = {
 	text: string;
-    onClick: () => void;
-    disabled: boolean;
-    className?: string;
+	onClick: () => void;
+	disabled: boolean;
+	className?: string;
 	borderColor?: string;
-    style?: CSSProperties;
+	style?: CSSProperties;
 };
 
 function SurfaceCard({
 	text,
-    onClick,
-    disabled,
-    className,
+	onClick,
+	disabled,
+	className,
 	borderColor,
 	style,
 }: clueCardProps) {
 	return (
 		<button
-			className={`surfacecard ${className}`}
+			className={`surfacecard ${className || ""}`}
 			onClick={onClick}
-			style={{ ...{ border: `2px solid ${borderColor}` }, ...style}}
-            disabled={disabled}
+			style={{
+				...{ border: `2px solid ${borderColor || "var(--blue)"}` },
+				...style,
+			}}
+			disabled={disabled}
 		>
 			<pre>{text}</pre>
 		</button>
