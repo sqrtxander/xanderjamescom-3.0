@@ -19,7 +19,7 @@ function Round2({ glyph, clues, relation, explanation }: round2Props) {
 						key={i}
 						front={i === 3 ? "?" : `Reveal clue ${i + 1}`}
 						back={clue}
-						frontClass={i === 3 && "big"}
+						frontClass={i === 3 ? "big" : undefined}
 						className="r2"
 						borderColor="var(--blue)"
 					/>
