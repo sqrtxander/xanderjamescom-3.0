@@ -54,7 +54,7 @@
 	align-items: center;
 	background: none;
 	transition: background 0.3s;
-	font-size: 11pt;
+    font-size: inherit;
 }
 
 .ghostbutton:hover {
@@ -69,5 +69,20 @@
 .ghostbutton:disabled {
 	background: none;
     cursor: default;
+}
+
+.size-l,
+.size-xl,
+.size-2xl {
+    font-size: 14pt;
+}
+
+.size-s,
+.size-m {
+    font-size: 12pt;
+}
+
+.size-xs {
+    font-size: 10pt;
 }
 

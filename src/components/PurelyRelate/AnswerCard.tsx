@@ -15,11 +15,11 @@ function AnswerCard({ front, back, borderColor, explanation, className }: answer
 		<button className={`answercard ${className}`} style={{ border: `2px solid ${borderColor}` }} onClick={flip}>
 			{flipped ? (
 				<div>
-					<p>{back}</p>
-					{explanation && <p className="explanation">{explanation}</p>}
+					<pre>{back}</pre>
+					{explanation && <pre className="explanation">{explanation}</pre>}
 				</div>
 			) : (
-				<p>{front}</p>
+				<pre>{front}</pre>
 			)}
 		</button>
 	);

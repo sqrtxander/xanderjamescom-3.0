@@ -25,7 +25,7 @@ function SurfaceCard({
 			style={{ ...{ border: `2px solid ${borderColor}` }, ...style}}
             disabled={disabled}
 		>
-			<p>{text}</p>
+			<pre>{text}</pre>
 		</button>
 	);
 }

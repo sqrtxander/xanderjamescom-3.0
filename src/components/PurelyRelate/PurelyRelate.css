@@ -19,13 +19,17 @@
 	align-items: center;
 	background: none;
 	transition: background 0.3s;
-	font-size: 11pt;
+	font-size: inherit;
+    min-width: 0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
-.answercard {
-	grid-column-start: 1;
-	grid-column-end: 5;
-	height: fit-content;
+pre {
+    white-space: inherit;
+    word-wrap: inherit;
+    overflow-wrap: inherit;
 }
 
 .cluecard:hover,
@@ -90,7 +94,32 @@
 	display: grid;
 	gap: 1em;
 	grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: repeat(2, max-content);
+	grid-template-rows: repeat(2, 1fr);
+    min-width: 0;
+}
+
+.answercard {
+	grid-column-start: 1;
+	grid-column-end: 5;
+	height: fit-content;
+}
+
+.size-xs .round1question,
+.size-s .round1question,
+.size-xs .round2question,
+.size-s .round2question {
+	width: 100%;
+	display: grid;
+	gap: 1em;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+}
+
+.size-xs .answercard,
+.size-s .answercard {
+	grid-column-start: 1;
+	grid-column-end: 3;
+	height: fit-content;
 }
 
 .round4 {
@@ -111,6 +140,7 @@
     gap: 1em;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
+    min-width: 0;
 }
 
 .round3grid.solved {

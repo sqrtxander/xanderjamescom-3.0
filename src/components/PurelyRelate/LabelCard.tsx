@@ -13,7 +13,7 @@ function LabelCard({ text, borderColor, style }: labelCardProps) {
 			className="labelcard"
 			style={{ ...{ border: `2px solid ${borderColor}` }, ...style }}
 		>
-			<p>{text}</p>
+			<pre>{text}</pre>
 		</div>
 	);
 }

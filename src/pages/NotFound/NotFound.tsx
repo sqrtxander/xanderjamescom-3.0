@@ -2,7 +2,7 @@ import "./NotFound.css";
 
 function NotFound() {
 	return (
-		<div className="vstack vertcenter horcenter">
+		<div className="vstack vcenter hcenter">
 			<p className="tiny noleading">Looking for something?</p>
 			<p className="huge noleading">404</p>
 		</div>

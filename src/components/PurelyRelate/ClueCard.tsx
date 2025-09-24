@@ -26,7 +26,7 @@ function ClueCard({
 			onClick={flip}
 			style={{ ...{ border: `2px solid ${borderColor}` }, ...(flipped ? backStyle : frontStyle)}}
 		>
-			<p>{flipped ? back : front}</p>
+			<pre>{flipped ? back : front}</pre>
 		</button>
 	);
 }

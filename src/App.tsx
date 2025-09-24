@@ -3,14 +3,17 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import useLocalStorage from "use-local-storage";
 import "./App.css";
 
+// hooks
+import { useScreenSize } from "./hooks";
+
 // components
-import Header from "./components/Header/Header";
+import Header from "@/components/Header/Header";
 
 // pages
-import HomePage from "./pages/HomePage/HomePage";
-import PurelyRelate from "./pages/PurelyRelate/PurelyRelate";
-import PREpisode from "./pages/PurelyRelate/PREpisode";
-import NotFound from "./pages/NotFound/NotFound";
+import HomePage from "@/pages/HomePage/HomePage";
+import PurelyRelate from "@/pages/PurelyRelate/PurelyRelate";
+import PREpisode from "@/pages/PurelyRelate/PREpisode";
+import NotFound from "@/pages/NotFound/NotFound";
 
 function App() {
 	const defaultDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
@@ -23,9 +26,11 @@ function App() {
 		document.documentElement.setAttribute("data-theme", theme);
 	}, [theme]);
 
+    const screenSize = useScreenSize();
+
 	const switchTheme = () => setTheme(theme === "light" ? "dark" : "light");
 	return (
-		<div className="app">
+		<div className={`app size-${screenSize}`}>
 			<Header theme={theme} switchTheme={switchTheme} />
 			<BrowserRouter>
 				<Routes>
