@@ -62,7 +62,7 @@ pre {
 }
 
 .round3buttons > .ghostborder:disabled {
-	border: 2px solid color-mix(in srgb, var(--fg) 40%, var(--bg));
+	border: 2px solid var(--grey);
     transition: border 0.2s;
 }
 
@@ -163,3 +163,14 @@ pre {
 .round3grid.solved {
     grid-template-rows: repeat(8, max-content);
 }
+
+.flipallbutton {
+    width: calc((100% - 3em)/4);
+    height: 3em;
+}
+
+.size-xs .flipallbutton,
+.size-s .flipallbutton {
+    width: calc((100% - 1em)/2);
+}
+

@@ -8,8 +8,15 @@ type round2Props = {
 	clues: [string, string, string, string];
 	relation: string;
 	explanation?: string;
+	flippedAll: boolean;
 };
-function Round2({ glyph, clues, relation, explanation }: round2Props) {
+function Round2({
+	glyph,
+	clues,
+	relation,
+	explanation,
+	flippedAll,
+}: round2Props) {
 	return (
 		<div className="round2">
 			<Glyph glyphID={glyph} />
@@ -22,6 +29,7 @@ function Round2({ glyph, clues, relation, explanation }: round2Props) {
 						frontClass={i === 3 ? "big" : undefined}
 						className="r2"
 						borderColor="var(--blue)"
+                        flippedAll={flippedAll}
 					/>
 				))}
 				<AnswerCard
@@ -29,6 +37,7 @@ function Round2({ glyph, clues, relation, explanation }: round2Props) {
 					back={relation}
 					explanation={explanation}
 					borderColor="var(--purple)"
+                    flippedAll={flippedAll}
 				/>
 			</div>
 		</div>

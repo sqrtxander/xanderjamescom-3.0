@@ -1,7 +1,9 @@
 import { Round1, Round2, Round3, Round4 } from "@/components/PurelyRelate";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import NotFound from "../NotFound/NotFound";
+import NotFound from "@/pages/NotFound/NotFound";
+import { LuEye, LuEyeClosed } from "react-icons/lu";
+import { IconContext } from "react-icons";
 
 type glyph = "O" | "L" | "I" | "T" | "J" | "Z";
 type relation = {
@@ -42,11 +44,17 @@ function PREpisode() {
 	});
 	const [loading, setLoading] = useState(true);
 	const [errorred, setErrored] = useState(false);
+	const [flippedAll, setFlippedAll] = useState(false);
 	const { episodeID } = useParams();
 	const apiURL = import.meta.env.VITE_API_URL;
 
+	const flipAll = () => setFlippedAll(!flippedAll);
+
 	useEffect(() => {
-		console.log("HELLO?");
+		console.log(flippedAll);
+	}, [flippedAll]);
+
+	useEffect(() => {
 		const fetchDataAndSetTitle = (episodeIDInt: number) => {
 			fetch(`${apiURL}/purelyrelate/${episodeIDInt}`)
 				.then((resp) => {
@@ -84,6 +92,15 @@ function PREpisode() {
 			) : (
 				<div className="vstack wide">
 					<h1>Purely Relate {episodeContent.title}</h1>
+					<button className="ghostbutton flipallbutton" onClick={flipAll}>
+						<IconContext.Provider
+							value={{ style: { height: "2em", width: "2em" } }}
+						>
+							{flippedAll ? <LuEyeClosed /> : <LuEye />}
+                            <p style={{padding: "1em"}}> Flip all </p>
+							{flippedAll ? <LuEyeClosed /> : <LuEye />}
+						</IconContext.Provider>
+					</button>
 					{episodeContent.relations && (
 						<>
 							<h2>Round 1: Relations</h2>
@@ -94,6 +111,7 @@ function PREpisode() {
 									clues={question.clues}
 									relation={question.relation}
 									explanation={question.explanation}
+									flippedAll={flippedAll}
 								/>
 							))}
 						</>
@@ -108,6 +126,7 @@ function PREpisode() {
 									clues={question.clues}
 									relation={question.relation}
 									explanation={question.explanation}
+									flippedAll={flippedAll}
 								/>
 							))}
 						</>
@@ -120,6 +139,7 @@ function PREpisode() {
 									key={i}
 									glyph={question.glyph}
 									groups={question.groups}
+									flippedAll={flippedAll}
 								/>
 							))}
 						</>
@@ -132,6 +152,7 @@ function PREpisode() {
 									key={i}
 									relation={question.relation}
 									clues={question.clues}
+									flippedAll={flippedAll}
 								/>
 							))}
 						</>

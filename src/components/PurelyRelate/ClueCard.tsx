@@ -1,5 +1,5 @@
 import "./PurelyRelate.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 type clueCardProps = {
 	front: string;
@@ -7,6 +7,7 @@ type clueCardProps = {
 	className?: string;
 	borderColor?: string;
 	frontClass?: string;
+	flippedAll: boolean;
 };
 
 function ClueCard({
@@ -15,12 +16,18 @@ function ClueCard({
 	className,
 	borderColor,
 	frontClass,
+	flippedAll,
 }: clueCardProps) {
 	const [flipped, setFlipped] = useState(false);
 	const flip = () => setFlipped(!flipped);
+
+	useEffect(() => {
+		setFlipped(flippedAll);
+	}, [flippedAll]);
+
 	return (
 		<button
-			className={`cluecard ${className || ""} ${!flipped && frontClass || ""}`}
+			className={`cluecard ${className || ""} ${(!flipped && frontClass) || ""}`}
 			onClick={flip}
 			style={{ border: `2px solid ${borderColor}` }}
 		>

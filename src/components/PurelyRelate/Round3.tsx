@@ -8,7 +8,6 @@ type group = {
 	relation: string;
 };
 
-// type groups = [group, group, group, group];
 type groups = Array<group>;
 
 type cell = {
@@ -52,9 +51,10 @@ function shuffle(state: cell[], start: number) {
 type round3Props = {
 	glyph: "O" | "J" | "I" | "T" | "L" | "Z";
 	groups: groups;
+	flippedAll: boolean;
 };
 
-function Round3({ glyph, groups }: round3Props) {
+function Round3({ glyph, groups, flippedAll }: round3Props) {
 	const [selected, setSelected] = useState<number[]>([]);
 	const [groupsFound, setGroupsFound] = useState(0);
 	const [surface, setSurface] = useState(initSurface(groups));
@@ -65,6 +65,14 @@ function Round3({ glyph, groups }: round3Props) {
 		"var(--pink)",
 	];
 	const defaultColor = "var(--blue)";
+
+	useEffect(() => {
+		if (flippedAll) {
+			solveSurface();
+		} else {
+			resetSurface();
+		}
+	}, [flippedAll]);
 
 	const resetSurface = () => {
 		setGroupsFound(0);
@@ -196,6 +204,7 @@ function Round3({ glyph, groups }: round3Props) {
 						back={surface[i].relation}
 						className="r3"
 						borderColor="var(--purple)"
+						flippedAll={flippedAll}
 					/>,
 				);
 			}

@@ -1,5 +1,5 @@
 import "./PurelyRelate.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 type answerCardProps = {
 	front: string;
@@ -7,6 +7,7 @@ type answerCardProps = {
 	borderColor?: string;
 	explanation?: string;
 	className?: string;
+    flippedAll: boolean;
 };
 function AnswerCard({
 	front,
@@ -14,9 +15,15 @@ function AnswerCard({
 	borderColor,
 	explanation,
 	className,
+    flippedAll,
 }: answerCardProps) {
 	const [flipped, setFlipped] = useState(false);
 	const flip = () => setFlipped(!flipped);
+
+	useEffect(() => {
+		setFlipped(flippedAll);
+	}, [flippedAll]);
+
 	return (
 		<button
 			className={`answercard ${className || ""}`}
