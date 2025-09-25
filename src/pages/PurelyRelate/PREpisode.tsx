@@ -97,13 +97,39 @@ function PREpisode() {
 							value={{ style: { height: "2em", width: "2em" } }}
 						>
 							{flippedAll ? <LuEyeClosed /> : <LuEye />}
-                            <p style={{padding: "1em"}}> Flip all </p>
+							<p style={{ padding: "1em" }}> Flip all </p>
 							{flippedAll ? <LuEyeClosed /> : <LuEye />}
 						</IconContext.Provider>
 					</button>
-					{episodeContent.relations && (
+					<h2>Jump to Section</h2>
+					<ul>
+						{episodeContent.relations &&
+							episodeContent.relations.length > 0 && (
+								<li>
+									<a href="#round1">Round 1: Relations</a>
+								</li>
+							)}
+						{episodeContent.progressions &&
+							episodeContent.progressions.length > 0 && (
+								<li>
+									<a href="#round2">Round 2: Progressions</a>
+								</li>
+							)}
+						{episodeContent.surfaces && episodeContent.surfaces.length > 0 && (
+							<li>
+								<a href="#round3">Round 3: Relating Surfaces</a>
+							</li>
+						)}
+						{episodeContent.consonants &&
+							episodeContent.consonants.length > 0 && (
+								<li>
+									<a href="#round4">Round 4: Consonants Only</a>
+								</li>
+							)}
+					</ul>
+					{episodeContent.relations && episodeContent.relations.length > 0 && (
 						<>
-							<h2>Round 1: Relations</h2>
+							<h2 id="round1">Round 1: Relations</h2>
 							{episodeContent.relations.map((question, i) => (
 								<Round1
 									key={i}
@@ -116,24 +142,25 @@ function PREpisode() {
 							))}
 						</>
 					)}
-					{episodeContent.progressions && (
+					{episodeContent.progressions &&
+						episodeContent.progressions.length > 0 && (
+							<>
+								<h2 id="round2">Round 2: Progressions</h2>
+								{episodeContent.progressions.map((question, i) => (
+									<Round2
+										key={i}
+										glyph={question.glyph}
+										clues={question.clues}
+										relation={question.relation}
+										explanation={question.explanation}
+										flippedAll={flippedAll}
+									/>
+								))}
+							</>
+						)}
+					{episodeContent.surfaces && episodeContent.surfaces.length > 0 && (
 						<>
-							<h2>Round 2: Progressions</h2>
-							{episodeContent.progressions.map((question, i) => (
-								<Round2
-									key={i}
-									glyph={question.glyph}
-									clues={question.clues}
-									relation={question.relation}
-									explanation={question.explanation}
-									flippedAll={flippedAll}
-								/>
-							))}
-						</>
-					)}
-					{episodeContent.surfaces && (
-						<>
-							<h2>Round 3: Relating Surfaces</h2>
+							<h2 id="round3">Round 3: Relating Surfaces</h2>
 							{episodeContent.surfaces.map((question, i) => (
 								<Round3
 									key={i}
@@ -144,19 +171,20 @@ function PREpisode() {
 							))}
 						</>
 					)}
-					{episodeContent.consonants && (
-						<>
-							<h2>Round 4: Consonants Only</h2>
-							{episodeContent.consonants.map((question, i) => (
-								<Round4
-									key={i}
-									relation={question.relation}
-									clues={question.clues}
-									flippedAll={flippedAll}
-								/>
-							))}
-						</>
-					)}
+					{episodeContent.consonants &&
+						episodeContent.consonants.length > 0 && (
+							<>
+								<h2 id="round4">Round 4: Consonants Only</h2>
+								{episodeContent.consonants.map((question, i) => (
+									<Round4
+										key={i}
+										relation={question.relation}
+										clues={question.clues}
+										flippedAll={flippedAll}
+									/>
+								))}
+							</>
+						)}
 				</div>
 			)}
 		</>
