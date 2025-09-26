@@ -19,7 +19,7 @@
     --header-height: 40px;
 
 	font-family: "Iosevka Web", monospace;
-	line-height: 1.5;
+	line-height: normal;
 	font-weight: 400;
 }
 
@@ -55,7 +55,6 @@ h4,
 h5,
 h6 {
 	font-weight: 400;
-    margin-bottom: 0px;
 }
 
 * {

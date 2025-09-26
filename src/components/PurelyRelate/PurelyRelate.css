@@ -25,12 +25,18 @@
     word-wrap: break-word;
     overflow-wrap: break-word;
     box-sizing: border-box;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
 }
 
 pre {
     white-space: inherit;
     word-wrap: inherit;
     overflow-wrap: inherit;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .big pre {
@@ -125,7 +131,7 @@ pre {
 }
 
 .big {
-	font-size: 60pt;
+	font-size: 48pt;
 }
 
 .size-xs .big,
@@ -163,6 +169,24 @@ pre {
 .round3grid.solved {
     grid-template-rows: repeat(8, max-content);
 }
+
+.size-m .round3grid.solved,
+.size-l .round3grid.solved,
+.size-xl .round3grid.solved,
+.size-2xl .round3grid.solved {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, max-content);
+}
+
+.size-m .round3grid .answercard,
+.size-l .round3grid .answercard,
+.size-xl .round3grid .answercard,
+.size-2xl .round3grid .answercard {
+    grid-column-start: auto;
+    grid-column-end: auto;
+    height: 100%;
+}
+
 
 .flipallbutton {
     width: calc((100% - 3em)/4);

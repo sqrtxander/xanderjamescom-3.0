@@ -101,32 +101,36 @@ function PREpisode() {
 							{flippedAll ? <LuEyeClosed /> : <LuEye />}
 						</IconContext.Provider>
 					</button>
-					<h2>Jump to Section</h2>
-					<ul>
+					<h3>
+						Jump to Section:
 						{episodeContent.relations &&
 							episodeContent.relations.length > 0 && (
-								<li>
-									<a href="#round1">Round 1: Relations</a>
-								</li>
+								<>
+									&nbsp;
+									<a href="#round1">Round 1</a>
+								</>
 							)}
 						{episodeContent.progressions &&
 							episodeContent.progressions.length > 0 && (
-								<li>
-									<a href="#round2">Round 2: Progressions</a>
-								</li>
+								<>
+									&nbsp;
+									<a href="#round2">Round 2</a>
+								</>
 							)}
 						{episodeContent.surfaces && episodeContent.surfaces.length > 0 && (
-							<li>
-								<a href="#round3">Round 3: Relating Surfaces</a>
-							</li>
+							<>
+								&nbsp;
+								<a href="#round3">Round 3</a>
+							</>
 						)}
 						{episodeContent.consonants &&
 							episodeContent.consonants.length > 0 && (
-								<li>
-									<a href="#round4">Round 4: Consonants Only</a>
-								</li>
+								<>
+									&nbsp;
+									<a href="#round4">Round 4</a>
+								</>
 							)}
-					</ul>
+					</h3>
 					{episodeContent.relations && episodeContent.relations.length > 0 && (
 						<>
 							<h2 id="round1">Round 1: Relations</h2>
