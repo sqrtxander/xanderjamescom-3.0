@@ -1,6 +1,5 @@
 .cluecard.r1,
-.cluecard.r2,
-.surfacecard {
+.cluecard.r2 {
 	aspect-ratio: 7 / 4;
 }
 
@@ -170,12 +169,22 @@ pre {
     grid-template-rows: repeat(8, max-content);
 }
 
+.surfacecard {
+    height: 100%;
+}
+.size-m .round3grid,
+.size-l .round3grid,
+.size-xl .round3grid,
+.size-2xl .round3grid {
+    aspect-ratio: 7/4;
+}
+
 .size-m .round3grid.solved,
 .size-l .round3grid.solved,
 .size-xl .round3grid.solved,
 .size-2xl .round3grid.solved {
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(4, max-content);
+    grid-template-rows: repeat(4, 1fr);
 }
 
 .size-m .round3grid .answercard,
@@ -185,6 +194,14 @@ pre {
     grid-column-start: auto;
     grid-column-end: auto;
     height: 100%;
+    aspect-ratio: auto;
+}
+
+.size-m .round3grid .surfacecard,
+.size-l .round3grid .surfacecard,
+.size-xl .round3grid .surfacecard,
+.size-2xl .round3grid .surfacecard {
+    aspect-ratio: auto;
 }
 
 

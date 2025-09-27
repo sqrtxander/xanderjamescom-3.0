@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
 import PRExample from "./PRExample";
 import { useEffect, useState } from "react";
-import "./PurelyRelate.css"
+import "./PurelyRelate.css";
 
 type episodes = { id: number; title: string }[];
 function PurelyRelate() {
@@ -38,7 +38,8 @@ function PurelyRelate() {
 					<h1>Purely Relate</h1>
 					<p>
 						Here you will find questions I have written based on the BBC Quiz
-						show Only Connect
+						show Only Connect.{" "}
+						<a href="#overview">Jump to Overview and Examples</a>.
 					</p>
 					<h2>Episodes</h2>
 					{errored ? (
@@ -55,7 +56,7 @@ function PurelyRelate() {
 								<a
 									key={i}
 									href={`purelyrelate/episode/${ep.id.toString().padStart(2, "0")}/`}
-                                    className="episodebutton"
+									className="episodebutton"
 								>
 									<button className="ghostbutton episodebutton">
 										{ep.title}
