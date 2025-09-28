@@ -13,6 +13,7 @@ import Header from "@/components/Header/Header";
 import HomePage from "@/pages/HomePage/HomePage";
 import PurelyRelate from "@/pages/PurelyRelate/PurelyRelate";
 import PREpisode from "@/pages/PurelyRelate/PREpisode";
+import Crossword from "@/pages/Crossword/Crossword";
 import NotFound from "@/pages/NotFound/NotFound";
 
 function App() {
@@ -38,6 +39,7 @@ function App() {
 					<Route path="/purelyrelate/" element={<PurelyRelate />}>
 						<Route path="episode/:episodeID" element={<PREpisode />} />
 					</Route>
+					<Route path="/crosswords/" element={<Crossword />} />
 					<Route path="*" element={<NotFound />} />
 				</Routes>
 			</BrowserRouter>
