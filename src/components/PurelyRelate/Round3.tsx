@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import SurfaceCard from "./SurfaceCard";
 import AnswerCard from "./AnswerCard";
 import Glyph from "./Glyph";
@@ -58,41 +58,31 @@ function Round3({ glyph, groups, flippedAll }: round3Props) {
 	const [selected, setSelected] = useState<number[]>([]);
 	const [groupsFound, setGroupsFound] = useState(0);
 	const [surface, setSurface] = useState(initSurface(groups));
-	const groupColors = [
-		"var(--green)",
-		"var(--yellow)",
-		"var(--orange)",
-		"var(--pink)",
-	];
+	const groupColors = useMemo(
+		() => ["var(--green)", "var(--yellow)", "var(--orange)", "var(--pink)"],
+		[],
+	);
 	const defaultColor = "var(--blue)";
 
-	useEffect(() => {
-		if (flippedAll) {
-			solveSurface();
-		} else {
-			resetSurface();
-		}
-	}, [flippedAll]);
-
-	const resetSurface = () => {
+	const resetSurface = useCallback(() => {
 		setGroupsFound(0);
 		setSelected([]);
 		setSurface(initSurface(groups));
-	};
+	}, [groups]);
 
-	const solveSurface = () => {
+	const solveSurface = useCallback(() => {
 		let found = groupsFound;
-		let newSurface = [...surface];
+		const newSurface = [...surface];
 		while (found < 4) {
 			const currGroup = newSurface[found * 4].groupId;
-			let toSelect = [found * 4];
+			const toSelect = [found * 4];
 			for (let i = found * 4 + 1; i < newSurface.length; i++) {
 				if (newSurface[i].groupId === currGroup) {
 					toSelect.push(i);
 				}
 			}
 			toSelect.map((idx, i) => {
-				let temp = newSurface.splice(idx, 1);
+				const temp = newSurface.splice(idx, 1);
 				temp[0].solved = true;
 				temp[0].color = groupColors[found];
 				newSurface.splice(i + 4 * found, 0, temp[0]);
@@ -102,7 +92,15 @@ function Round3({ glyph, groups, flippedAll }: round3Props) {
 		setSurface(newSurface);
 		setGroupsFound(found);
 		setSelected([]);
-	};
+	}, [groupColors, groupsFound, surface]);
+
+	useEffect(() => {
+		if (flippedAll) {
+			solveSurface();
+		} else {
+			resetSurface();
+		}
+	}, [flippedAll, solveSurface, resetSurface]);
 
 	const onClick = (i: number) => {
 		// deselecting
@@ -122,34 +120,34 @@ function Round3({ glyph, groups, flippedAll }: round3Props) {
 		);
 	};
 
-	const isGroup = () => {
-		let id = surface[selected[0]].groupId;
-		for (let i = 1; i < selected.length; i++) {
-			if (surface[selected[i]].groupId !== id) {
-				return false;
-			}
-		}
-		return true;
-	};
-
-	const manageGroup = () => {
-		let sorted = [...selected];
-		sorted.sort((a, b) => a - b);
-
-		let newSurface = [...surface];
-		sorted.map((idx, i) => {
-			let temp = newSurface.splice(idx, 1);
-			temp[0].solved = true;
-			temp[0].color = groupColors[groupsFound];
-			newSurface.splice(i + 4 * groupsFound, 0, temp[0]);
-		});
-		setSurface(newSurface);
-
-		setGroupsFound(groupsFound + 1);
-		setSelected([]);
-	};
-
 	useEffect(() => {
+		const isGroup = () => {
+			const id = surface[selected[0]].groupId;
+			for (let i = 1; i < selected.length; i++) {
+				if (surface[selected[i]].groupId !== id) {
+					return false;
+				}
+			}
+			return true;
+		};
+
+		const manageGroup = () => {
+			const sorted = [...selected];
+			sorted.sort((a, b) => a - b);
+
+			const newSurface = [...surface];
+			sorted.map((idx, i) => {
+				const temp = newSurface.splice(idx, 1);
+				temp[0].solved = true;
+				temp[0].color = groupColors[groupsFound];
+				newSurface.splice(i + 4 * groupsFound, 0, temp[0]);
+			});
+			setSurface(newSurface);
+
+			setGroupsFound(g => g + 1);
+			setSelected([]);
+		};
+
 		if (selected.length !== 4) {
 			return;
 		}
@@ -176,7 +174,7 @@ function Round3({ glyph, groups, flippedAll }: round3Props) {
 			);
 			setSelected([]);
 		}, 500);
-	}, [selected]);
+	}, [selected, groupColors, groupsFound, surface]);
 
 	useEffect(() => {
 		if (groupsFound === 3) {
@@ -185,7 +183,7 @@ function Round3({ glyph, groups, flippedAll }: round3Props) {
 	}, [groupsFound]);
 
 	const renderSurface = () => {
-		const renderedItems: any = []; //TODO change any
+		const renderedItems: React.ReactElement[] = [];
 		surface.map((card, i) => {
 			renderedItems.push(
 				<SurfaceCard

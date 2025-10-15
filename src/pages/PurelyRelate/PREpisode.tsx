@@ -81,7 +81,7 @@ function PREpisode() {
 		} else {
 			fetchDataAndSetTitle(parseInt(episodeID, 10));
 		}
-	}, []);
+	}, [apiURL, episodeID]);
 
 	return (
 		<>

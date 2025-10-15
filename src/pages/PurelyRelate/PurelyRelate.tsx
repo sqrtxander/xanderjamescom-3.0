@@ -29,7 +29,7 @@ function PurelyRelate() {
 				});
 		};
 		fetchData();
-	}, []);
+	}, [apiURL]);
 
 	return (
 		<>
