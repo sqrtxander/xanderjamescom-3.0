@@ -95,7 +95,7 @@ const data = {
 
 function Crossword() {
 	return (
-		<div style={{width: "100%"}}>
+		<div style={{width: "80%", padding: "2em"}}>
 			<MyCrossword data={data} id="demo" />
 		</div>
 	);

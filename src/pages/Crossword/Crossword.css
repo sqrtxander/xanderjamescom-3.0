@@ -1,13 +1,18 @@
 .MyCrossword--blueTheme .Clue--highlighted {
 	background-color: transparent;
-	border: 2px solid var(--cyan);
+	border: 2px solid var(--blue);
 	border-radius: 10px;
 }
 .MyCrossword--blueTheme .GridCell--highlighted .GridCell__rect {
-	fill: var(--theme-blue-100);
+    fill: color-mix(in srgb, var(--blue) 30%, var(--grid-foreground));
 }
+
 .MyCrossword--blueTheme .GridCell--selected .GridCell__rect {
-	fill: var(--theme-blue-700);
+    fill: var(--blue);
+}
+
+.MyCrossword .GridInput {
+    caret-color: white;
 }
 
 .MyCrossword .StickyClue {
