@@ -77,11 +77,37 @@
     border-radius: 10px;
 }
 
-.MyCrossword .Button:hover,
+.MyCrossword .Button:not(:disabled):hover,
 .MyCrossword .Button--filled:not(:disabled):hover {
 	background-color: color-mix(in srgb, var(--fg) 20%, transparent);
 }
 
-.MyCrossword .Button:active {
+.MyCrossword .Button:not(:disabled):active {
 	background-color: color-mix(in srgb, var(--fg) 40%, transparent);
+}
+
+.MyCrossword .AnagramHelper__input,
+.MyCrossword .AnagramHelper__input::placeholder,
+.MyCrossword .AnagramHelper .SolutionDisplay__letter {
+    color: var(--fg);
+}
+
+.MyCrossword .AnagramHelper .SolutionDisplay__letter {
+    border: 2px solid var(--fg);
+}
+
+
+.MyCrossword .DropdownButton__dropdownButtonIcon,
+.MyCrossword .AnagramHelper__closeButtonIcon {
+    fill: var(--fg);
+    stroke: var(--fg);
+}
+
+.MyCrossword .AnagramHelper__input {
+    border: 2px solid var(--fg);
+    border-radius: 10px;
+}
+
+.MyCrossword .AnagramHelper {
+    border: 2px solid var(--bg-highlight);
 }
