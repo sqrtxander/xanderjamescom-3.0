@@ -51,11 +51,10 @@ function PREpisode() {
 	const flipAll = () => setFlippedAll(!flippedAll);
 
 	useEffect(() => {
-		console.log(flippedAll);
 	}, [flippedAll]);
 
 	useEffect(() => {
-		const fetchDataAndSetTitle = (episodeIDInt: number) => {
+		const fetchData = (episodeIDInt: number) => {
 			fetch(`${apiURL}/purelyrelate/${episodeIDInt}`)
 				.then((resp) => {
 					if (!resp.ok) {
@@ -79,7 +78,7 @@ function PREpisode() {
 		) {
 			setErrored(true);
 		} else {
-			fetchDataAndSetTitle(parseInt(episodeID, 10));
+			fetchData(parseInt(episodeID, 10));
 		}
 	}, [apiURL, episodeID]);
 
