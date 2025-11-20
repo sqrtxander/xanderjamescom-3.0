@@ -162,7 +162,7 @@ const crosswordData = [
                 length: 6,
                 group: ["4-down"],
                 position: { x: 6, y: 0 },
-                separatorLocations: { " ": [2] },
+                separatorLocations: { ",": [2] },
                 solution: "ASSUCH"
             },
             {
