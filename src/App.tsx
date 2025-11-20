@@ -14,6 +14,7 @@ import HomePage from "@/pages/HomePage/HomePage";
 import PurelyRelate from "@/pages/PurelyRelate/PurelyRelate";
 import PREpisode from "@/pages/PurelyRelate/PREpisode";
 import Crossword from "@/pages/Crossword/Crossword";
+import CrosswordPuzzle from "@/pages/Crossword/CrosswordPuzzle";
 import NotFound from "@/pages/NotFound/NotFound";
 
 function App() {
@@ -39,7 +40,9 @@ function App() {
 					<Route path="/purelyrelate/" element={<PurelyRelate />}>
 						<Route path="episode/:episodeID" element={<PREpisode />} />
 					</Route>
-					<Route path="/crosswords/" element={<Crossword />} />
+					<Route path="/crosswords/" element={<Crossword />} >
+						<Route path="puzzle/:puzzleID" element={<CrosswordPuzzle />} />
+                    </Route>
 					<Route path="*" element={<NotFound />} />
 				</Routes>
 			</BrowserRouter>
