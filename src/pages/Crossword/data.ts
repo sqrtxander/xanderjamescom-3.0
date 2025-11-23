@@ -241,7 +241,7 @@ const crosswordData = [
                 id: "16-down",
                 number: 16,
                 humanNumber: "16",
-                clue: "Picture hiding one wizard (4)",
+                clue: "Wizard's face disappearing from picture (4)",
                 direction: "down",
                 length: 4,
                 group: ["16-down"],
