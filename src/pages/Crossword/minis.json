@@ -1,0 +1,794 @@
+[
+	{
+		"id": "minicrosswords/1",
+		"number": 1,
+		"name": "1.",
+		"dimensions": {
+			"cols": 5,
+			"rows": 5
+		},
+		"solutionAvailable": true,
+		"entries": [
+			{
+				"id": "1-across",
+				"number": 1,
+				"humanNumber": "1",
+				"clue": "A long long way to run",
+				"direction": "across",
+				"length": 3,
+				"group": ["1-across"],
+				"position": { "x": 2, "y": 0 },
+				"separatorLocations": {},
+				"solution": "FAR"
+			},
+			{
+				"id": "4-across",
+				"number": 4,
+				"humanNumber": "4",
+				"clue": "Exposed",
+				"direction": "across",
+				"length": 4,
+				"group": ["4-across"],
+				"position": { "x": 1, "y": 1 },
+				"separatorLocations": {},
+				"solution": "BARE"
+			},
+			{
+				"id": "5-across",
+				"number": 5,
+				"humanNumber": "5",
+				"clue": "Turned the volume off",
+				"direction": "across",
+				"length": 5,
+				"group": ["5-across"],
+				"position": { "x": 0, "y": 2 },
+				"separatorLocations": {},
+				"solution": "MUTED"
+			},
+			{
+				"id": "6-across",
+				"number": 6,
+				"humanNumber": "6",
+				"clue": "Sources of metal",
+				"direction": "across",
+				"length": 4,
+				"group": ["6-across"],
+				"position": { "x": 0, "y": 3 },
+				"separatorLocations": {},
+				"solution": "ORES"
+			},
+			{
+				"id": "7-across",
+				"number": 7,
+				"humanNumber": "7",
+				"clue": "Hospital workers (Abbr.)",
+				"direction": "across",
+				"length": 3,
+				"group": ["7-across"],
+				"position": { "x": 0, "y": 4 },
+				"separatorLocations": {},
+				"solution": "DRS"
+			},
+			{
+				"id": "1-down",
+				"number": 1,
+				"humanNumber": "1",
+				"clue": "Outcomes",
+				"direction": "down",
+				"length": 5,
+				"group": ["1-down"],
+				"position": { "x": 2, "y": 0 },
+				"separatorLocations": {},
+				"solution": "FATES"
+			},
+			{
+				"id": "2-down",
+				"number": 2,
+				"humanNumber": "2",
+				"clue": "Greek god of war",
+				"direction": "down",
+				"length": 4,
+				"group": ["2-down"],
+				"position": { "x": 3, "y": 0 },
+				"separatorLocations": {},
+				"solution": "ARES"
+			},
+			{
+				"id": "3-down",
+				"number": 3,
+				"humanNumber": "3",
+				"clue": "What an angry person sees",
+				"direction": "down",
+				"length": 3,
+				"group": ["3-down"],
+				"position": { "x": 4, "y": 0 },
+				"separatorLocations": {},
+				"solution": "RED"
+			},
+			{
+				"id": "4-down",
+				"number": 4,
+				"humanNumber": "4",
+				"clue": "Hamilton's assassin",
+				"direction": "down",
+				"length": 4,
+				"group": ["4-down"],
+				"position": { "x": 1, "y": 1 },
+				"separatorLocations": {},
+				"solution": "BURR"
+			},
+			{
+				"id": "5-down",
+				"number": 5,
+				"humanNumber": "5",
+				"clue": "Web forum administrator, for short",
+				"direction": "down",
+				"length": 3,
+				"group": ["5-down"],
+				"position": { "x": 0, "y": 2 },
+				"separatorLocations": {},
+				"solution": "MOD"
+			}
+		]
+	},
+	{
+		"id": "minicrosswords/2",
+		"number": 2,
+		"name": "2.",
+		"dimensions": {
+			"cols": 5,
+			"rows": 5
+		},
+		"solutionAvailable": true,
+		"entries": [
+			{
+				"id": "1-across",
+				"number": 1,
+				"humanNumber": "1",
+				"clue": "Intensify, with up",
+				"direction": "across",
+				"length": 3,
+				"group": ["1-across"],
+				"position": { "x": 1, "y": 0 },
+				"separatorLocations": {},
+				"solution": "AMP"
+			},
+			{
+				"id": "4-across",
+				"number": 4,
+				"humanNumber": "4",
+				"clue": "Reveal a film plot, as to decrease others' enjoyment",
+				"direction": "across",
+				"length": 5,
+				"group": ["4-across"],
+				"position": { "x": 0, "y": 1 },
+				"separatorLocations": {},
+				"solution": "SPOIL"
+			},
+			{
+				"id": "6-across",
+				"number": 6,
+				"humanNumber": "6",
+				"clue": "Lying face down",
+				"direction": "across",
+				"length": 5,
+				"group": ["6-across"],
+				"position": { "x": 0, "y": 2 },
+				"separatorLocations": {},
+				"solution": "PRONE"
+			},
+			{
+				"id": "7-across",
+				"number": 7,
+				"humanNumber": "7",
+				"clue": "Let go",
+				"direction": "across",
+				"length": 5,
+				"group": ["7-across"],
+				"position": { "x": 0, "y": 3 },
+				"separatorLocations": {},
+				"solution": "FIRED"
+			},
+			{
+				"id": "8-across",
+				"number": 8,
+				"humanNumber": "8",
+				"clue": "French article",
+				"direction": "across",
+				"length": 3,
+				"group": ["8-across"],
+				"position": { "x": 1, "y": 4 },
+				"separatorLocations": {},
+				"solution": "LES"
+			},
+			{
+				"id": "1-down",
+				"number": 1,
+				"humanNumber": "1",
+				"clue": "When Earth Day is celebrated",
+				"direction": "down",
+				"length": 5,
+				"group": ["1-down"],
+				"position": { "x": 1, "y": 0 },
+				"separatorLocations": {},
+				"solution": "APRIL"
+			},
+			{
+				"id": "2-down",
+				"number": 2,
+				"humanNumber": "2",
+				"clue": "Bond actor Roger",
+				"direction": "down",
+				"length": 5,
+				"group": ["2-down"],
+				"position": { "x": 2, "y": 0 },
+				"separatorLocations": {},
+				"solution": "MOORE"
+			},
+			{
+				"id": "3-down",
+				"number": 3,
+				"humanNumber": "3",
+				"clue": "Longs for",
+				"direction": "down",
+				"length": 5,
+				"group": ["3-down"],
+				"position": { "x": 3, "y": 0 },
+				"separatorLocations": {},
+				"solution": "PINES"
+			},
+			{
+				"id": "4-down",
+				"number": 4,
+				"humanNumber": "4",
+				"clue": "UV-blocking metric",
+				"direction": "down",
+				"length": 3,
+				"group": ["4-down"],
+				"position": { "x": 0, "y": 1 },
+				"separatorLocations": {},
+				"solution": "SPF"
+			},
+			{
+				"id": "5-down",
+				"number": 5,
+				"humanNumber": "5",
+				"clue": "Went first",
+				"direction": "down",
+				"length": 3,
+				"group": ["5-down"],
+				"position": { "x": 4, "y": 1 },
+				"separatorLocations": {},
+				"solution": "LED"
+			}
+		]
+	},
+	{
+		"id": "minicrosswords/3",
+		"number": 3,
+		"name": "3.",
+		"dimensions": {
+			"cols": 5,
+			"rows": 5
+		},
+		"solutionAvailable": true,
+		"entries": [
+			{
+				"id": "1-across",
+				"number": 1,
+				"humanNumber": "1",
+				"clue": "Potential murder weapon?",
+				"direction": "across",
+				"length": 4,
+				"group": ["1-across"],
+				"position": { "x": 1, "y": 0 },
+				"separatorLocations": {},
+				"solution": "ROPE"
+			},
+			{
+				"id": "5-across",
+				"number": 5,
+				"humanNumber": "5",
+				"clue": "Potential location for a murder?",
+				"direction": "across",
+				"length": 4,
+				"group": ["5-across"],
+				"position": { "x": 1, "y": 1 },
+				"separatorLocations": {},
+				"solution": "HALL"
+			},
+			{
+				"id": "6-across",
+				"number": 6,
+				"humanNumber": "6",
+				"clue": "Watery part of blood",
+				"direction": "across",
+				"length": 5,
+				"group": ["6-across"],
+				"position": { "x": 0, "y": 2 },
+				"separatorLocations": {},
+				"solution": "SERUM"
+			},
+			{
+				"id": "7-across",
+				"number": 7,
+				"humanNumber": "7",
+				"clue": "Features of champagne flutes",
+				"direction": "across",
+				"length": 5,
+				"group": ["7-across"],
+				"position": { "x": 0, "y": 3 },
+				"separatorLocations": {},
+				"solution": "STEMS"
+			},
+			{
+				"id": "8-across",
+				"number": 8,
+				"humanNumber": "8",
+				"clue": "When you'll likely leave (Abbr.)",
+				"direction": "across",
+				"length": 3,
+				"group": ["8-across"],
+				"position": { "x": 0, "y": 4 },
+				"separatorLocations": {},
+				"solution": "ETD"
+			},
+			{
+				"id": "1-down",
+				"number": 1,
+				"humanNumber": "1",
+				"clue": "Butler in \"Gone with the Wind\"",
+				"direction": "down",
+				"length": 5,
+				"group": ["1-down"],
+				"position": { "x": 1, "y": 0 },
+				"separatorLocations": {},
+				"solution": "RHETT"
+			},
+			{
+				"id": "2-down",
+				"number": 2,
+				"humanNumber": "2",
+				"clue": "Propelled a boat",
+				"direction": "down",
+				"length": 5,
+				"group": ["2-down"],
+				"position": { "x": 2, "y": 0 },
+				"separatorLocations": {},
+				"solution": "OARED"
+			},
+			{
+				"id": "3-down",
+				"number": 3,
+				"humanNumber": "3",
+				"clue": "Potential murdering professor?",
+				"direction": "down",
+				"length": 4,
+				"group": ["3-down"],
+				"position": { "x": 3, "y": 0 },
+				"separatorLocations": {},
+				"solution": "PLUM"
+			},
+			{
+				"id": "4-down",
+				"number": 4,
+				"humanNumber": "4",
+				"clue": "Large deciduous trees",
+				"direction": "down",
+				"length": 4,
+				"group": ["4-down"],
+				"position": { "x": 4, "y": 0 },
+				"separatorLocations": {},
+				"solution": "ELMS"
+			},
+			{
+				"id": "6-down",
+				"number": 6,
+				"humanNumber": "6",
+				"clue": "157.5° from N",
+				"direction": "down",
+				"length": 3,
+				"group": ["6-down"],
+				"position": { "x": 0, "y": 2 },
+				"separatorLocations": {},
+				"solution": "SSE"
+			}
+		]
+	},
+	{
+		"id": "minicrosswords/4",
+		"number": 4,
+		"name": "4.",
+		"dimensions": {
+			"cols": 5,
+			"rows": 5
+		},
+		"solutionAvailable": true,
+		"entries": [
+			{
+				"id": "1-across",
+				"number": 1,
+				"humanNumber": "1",
+				"clue": "8 spades or 9 diamonds in 500, for example",
+				"direction": "across",
+				"length": 4,
+				"group": ["1-across"],
+				"position": { "x": 0, "y": 0 },
+				"separatorLocations": {},
+				"solution": "BIDS"
+			},
+			{
+				"id": "5-across",
+				"number": 5,
+				"humanNumber": "5",
+				"clue": "Go off like Mt Etna",
+				"direction": "across",
+				"length": 5,
+				"group": ["5-across"],
+				"position": { "x": 0, "y": 1 },
+				"separatorLocations": {},
+				"solution": "ERUPT"
+			},
+			{
+				"id": "7-across",
+				"number": 7,
+				"humanNumber": "7",
+				"clue": "Motorola competitor",
+				"direction": "across",
+				"length": 5,
+				"group": ["7-across"],
+				"position": { "x": 0, "y": 2 },
+				"separatorLocations": {},
+				"solution": "NOKIA"
+			},
+			{
+				"id": "8-across",
+				"number": 8,
+				"humanNumber": "8",
+				"clue": "Hard to get a reaction out of?",
+				"direction": "across",
+				"length": 5,
+				"group": ["8-across"],
+				"position": { "x": 0, "y": 3 },
+				"separatorLocations": {},
+				"solution": "INERT"
+			},
+			{
+				"id": "9-across",
+				"number": 9,
+				"humanNumber": "9",
+				"clue": "NASDAQ alternative",
+				"direction": "across",
+				"length": 4,
+				"group": ["9-across"],
+				"position": { "x": 0, "y": 4 },
+				"separatorLocations": {},
+				"solution": "NYSE"
+			},
+			{
+				"id": "1-down",
+				"number": 1,
+				"humanNumber": "1",
+				"clue": "Neighbour of Togo",
+				"direction": "down",
+				"length": 5,
+				"group": ["1-down"],
+				"position": { "x": 0, "y": 0 },
+				"separatorLocations": {},
+				"solution": "BENIN"
+			},
+			{
+				"id": "2-down",
+				"number": 2,
+				"humanNumber": "2",
+				"clue": "It can be dramatic",
+				"direction": "down",
+				"length": 5,
+				"group": ["2-down"],
+				"position": { "x": 1, "y": 0 },
+				"separatorLocations": {},
+				"solution": "IRONY"
+			},
+			{
+				"id": "3-down",
+				"number": 3,
+				"humanNumber": "3",
+				"clue": "Prince William and John Seymore, for some",
+				"direction": "down",
+				"length": 5,
+				"group": ["3-down"],
+				"position": { "x": 2, "y": 0 },
+				"separatorLocations": {},
+				"solution": "DUKES"
+			},
+			{
+				"id": "4-down",
+				"number": 4,
+				"humanNumber": "4",
+				"clue": "Cathedral point",
+				"direction": "down",
+				"length": 5,
+				"group": ["4-down"],
+				"position": { "x": 3, "y": 0 },
+				"separatorLocations": {},
+				"solution": "SPIRE"
+			},
+			{
+				"id": "6-down",
+				"number": 6,
+				"humanNumber": "6",
+				"clue": "Ink design for short",
+				"direction": "down",
+				"length": 3,
+				"group": ["6-down"],
+				"position": { "x": 4, "y": 1 },
+				"separatorLocations": {},
+				"solution": "TAT"
+			}
+		]
+	},
+	{
+		"id": "minicrosswords/5",
+		"number": 5,
+		"name": "5.",
+		"dimensions": {
+			"cols": 5,
+			"rows": 5
+		},
+		"solutionAvailable": true,
+		"entries": [
+			{
+				"id": "1-across",
+				"number": 1,
+				"humanNumber": "1",
+				"clue": "Children's TV postman",
+				"direction": "across",
+				"length": 3,
+				"group": ["1-across"],
+				"position": { "x": 0, "y": 0 },
+				"separatorLocations": {},
+				"solution": "PAT"
+			},
+			{
+				"id": "4-across",
+				"number": 4,
+				"humanNumber": "4",
+				"clue": "Bar drink",
+				"direction": "across",
+				"length": 3,
+				"group": ["4-across"],
+				"position": { "x": 0, "y": 1 },
+				"separatorLocations": {},
+				"solution": "ALE"
+			},
+			{
+				"id": "5-across",
+				"number": 5,
+				"humanNumber": "5",
+				"clue": "Lord",
+				"direction": "across",
+				"length": 5,
+				"group": ["5-across"],
+				"position": { "x": 0, "y": 2 },
+				"separatorLocations": {},
+				"solution": "LIEGE"
+			},
+			{
+				"id": "8-across",
+				"number": 8,
+				"humanNumber": "8",
+				"clue": "Hot spot in some gyms",
+				"direction": "across",
+				"length": 5,
+				"group": ["8-across"],
+				"position": { "x": 0, "y": 3 },
+				"separatorLocations": {},
+				"solution": "SAUNA"
+			},
+			{
+				"id": "9-across",
+				"number": 9,
+				"humanNumber": "9",
+				"clue": "Impel, urge",
+				"direction": "across",
+				"length": 4,
+				"group": ["9-across"],
+				"position": { "x": 1, "y": 4 },
+				"separatorLocations": {},
+				"solution": "SPUR"
+			},
+			{
+				"id": "1-down",
+				"number": 1,
+				"humanNumber": "1",
+				"clue": "Friends",
+				"direction": "down",
+				"length": 4,
+				"group": ["1-down"],
+				"position": { "x": 0, "y": 0 },
+				"separatorLocations": {},
+				"solution": "PALS"
+			},
+			{
+				"id": "2-down",
+				"number": 2,
+				"humanNumber": "2",
+				"clue": "Mark Twain to Samuel Clemens, for example",
+				"direction": "down",
+				"length": 5,
+				"group": ["2-down"],
+				"position": { "x": 1, "y": 0 },
+				"separatorLocations": {},
+				"solution": "ALIAS"
+			},
+			{
+				"id": "3-down",
+				"number": 3,
+				"humanNumber": "3",
+				"clue": "How to start a hole?",
+				"direction": "down",
+				"length": 5,
+				"group": ["3-down"],
+				"position": { "x": 2, "y": 0 },
+				"separatorLocations": {},
+				"solution": "TEEUP"
+			},
+			{
+				"id": "6-down",
+				"number": 6,
+				"humanNumber": "6",
+				"clue": "Wildebeest",
+				"direction": "down",
+				"length": 3,
+				"group": ["6-down"],
+				"position": { "x": 3, "y": 2 },
+				"separatorLocations": {},
+				"solution": "GNU"
+			},
+			{
+				"id": "7-down",
+				"number": 7,
+				"humanNumber": "7",
+				"clue": "\"I'm all ___\". (What an attentive Van Gogh might say)",
+				"direction": "down",
+				"length": 3,
+				"group": ["7-down"],
+				"position": { "x": 4, "y": 2 },
+				"separatorLocations": {},
+				"solution": "EAR"
+			}
+		]
+	},
+	{
+		"id": "minicrosswords/6",
+		"number": 6,
+		"name": "6.",
+		"dimensions": {
+			"cols": 5,
+			"rows": 5
+		},
+		"solutionAvailable": true,
+		"entries": [
+			{
+				"id": "1-across",
+				"number": 1,
+				"humanNumber": "1",
+				"clue": "Follow a trail",
+				"direction": "across",
+				"length": 5,
+				"group": ["1-across"],
+				"position": { "x": 0, "y": 0 },
+				"separatorLocations": {},
+				"solution": "TRACK"
+			},
+			{
+				"id": "6-across",
+				"number": 6,
+				"humanNumber": "6",
+				"clue": "Ones getting passed in a race",
+				"direction": "across",
+				"length": 5,
+				"group": ["6-across"],
+				"position": { "x": 0, "y": 1 },
+				"separatorLocations": {},
+				"solution": "BATON"
+			},
+			{
+				"id": "7-across",
+				"number": 7,
+				"humanNumber": "7",
+				"clue": "Italian white wine",
+				"direction": "across",
+				"length": 5,
+				"group": ["7-across"],
+				"position": { "x": 0, "y": 2 },
+				"separatorLocations": {},
+				"solution": "SOAVE"
+			},
+			{
+				"id": "8-across",
+				"number": 8,
+				"humanNumber": "8",
+				"clue": "Produce of blender",
+				"direction": "across",
+				"length": 5,
+				"group": ["8-across"],
+				"position": { "x": 0, "y": 3 },
+				"separatorLocations": {},
+				"solution": "PUREE"
+			},
+			{
+				"id": "9-across",
+				"number": 9,
+				"humanNumber": "9",
+				"clue": "Used to help explain light diffraction",
+				"direction": "across",
+				"length": 5,
+				"group": ["9-across"],
+				"position": { "x": 0, "y": 4 },
+				"separatorLocations": {},
+				"solution": "SLITS"
+			},
+			{
+				"id": "1-down",
+				"number": 1,
+				"humanNumber": "1",
+				"clue": "Kitchen measurements",
+				"direction": "down",
+				"length": 5,
+				"group": ["1-down"],
+				"position": { "x": 0, "y": 0 },
+				"separatorLocations": {},
+				"solution": "TBSPS"
+			},
+			{
+				"id": "2-down",
+				"number": 2,
+				"humanNumber": "2",
+				"clue": "French variant of \"Ralph\"",
+				"direction": "down",
+				"length": 5,
+				"group": ["2-down"],
+				"position": { "x": 1, "y": 0 },
+				"separatorLocations": {},
+				"solution": "RAOUL"
+			},
+			{
+				"id": "3-down",
+				"number": 3,
+				"humanNumber": "3",
+				"clue": "Breakout company",
+				"direction": "down",
+				"length": 5,
+				"group": ["3-down"],
+				"position": { "x": 2, "y": 0 },
+				"separatorLocations": {},
+				"solution": "ATARI"
+			},
+			{
+				"id": "4-down",
+				"number": 4,
+				"humanNumber": "4",
+				"clue": "Eagerly desire",
+				"direction": "down",
+				"length": 5,
+				"group": ["4-down"],
+				"position": { "x": 3, "y": 0 },
+				"separatorLocations": {},
+				"solution": "COVET"
+			},
+			{
+				"id": "5-down",
+				"number": 5,
+				"humanNumber": "5",
+				"clue": "Capped joints",
+				"direction": "down",
+				"length": 5,
+				"group": ["5-down"],
+				"position": { "x": 4, "y": 0 },
+				"separatorLocations": {},
+				"solution": "KNEES"
+			}
+		]
+	}
+]

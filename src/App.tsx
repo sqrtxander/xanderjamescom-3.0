@@ -14,7 +14,8 @@ import HomePage from "@/pages/HomePage/HomePage";
 import PurelyRelate from "@/pages/PurelyRelate/PurelyRelate";
 import PREpisode from "@/pages/PurelyRelate/PREpisode";
 import Crossword from "@/pages/Crossword/Crossword";
-import CrosswordPuzzle from "@/pages/Crossword/CrosswordPuzzle";
+import CrypticPuzzle from "@/pages/Crossword/CrypticPuzzle";
+import MiniPuzzle from "@/pages/Crossword/MiniPuzzle";
 import NotFound from "@/pages/NotFound/NotFound";
 
 function App() {
@@ -41,7 +42,8 @@ function App() {
 						<Route path="episode/:episodeID" element={<PREpisode />} />
 					</Route>
 					<Route path="/crosswords/" element={<Crossword />} >
-						<Route path="puzzle/:puzzleID" element={<CrosswordPuzzle />} />
+						<Route path="cryptic/:puzzleID" element={<CrypticPuzzle />} />
+						<Route path="mini/:puzzleID" element={<MiniPuzzle />} />
                     </Route>
 					<Route path="*" element={<NotFound />} />
 				</Routes>

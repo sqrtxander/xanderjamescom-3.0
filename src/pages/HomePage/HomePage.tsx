@@ -35,10 +35,14 @@ function HomePage() {
 				<p className="noleading codeline"></p>
 			</div>
 			<h1>My Projects</h1>
-            <h2><a href="/purelyrelate">Purely Relate</a></h2>
-            <p>Relating trivia based on the BBC quiz show Only Connect</p>
-            <h2><a href="/crosswords">Cryptic Crosswords</a></h2>
-            <p>Cryptic crosswords I have set</p>
+			<h2>
+				<a href="/purelyrelate">Purely Relate</a>
+			</h2>
+			<p>Relating trivia based on the BBC quiz show Only Connect</p>
+			<h2>
+				<a href="/crosswords">Crosswords</a>
+			</h2>
+			<p>Cryptic and mini crosswords I have set</p>
 		</div>
 	);
 }

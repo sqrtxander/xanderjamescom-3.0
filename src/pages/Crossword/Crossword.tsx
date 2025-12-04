@@ -1,22 +1,37 @@
 import { Outlet } from "react-router-dom";
 import "./Crossword.css";
-import crosswordData from "./data";
+import crypticData from "./cryptics.json";
+import miniData from "./minis.json";
 
 function Crossword() {
     return (
         <>
             {window.location.pathname.replace(/\/$/gim, "") === "/crosswords" ? (
                 <div className="vstack wide">
-                    <h1>Crosswords</h1>
+                    <h1>Cryptic Crosswords</h1>
                     <div className="puzzlebuttonsgrid">
-                        {crosswordData.map((puz, i) => (
+                        {crypticData.map((puz, i) => (
                             <a
                                 key={i}
-                                href={`crosswords/puzzle/${puz.number.toString().padStart(2, "0")}/`}
+                                href={`crosswords/cryptic/${puz.number.toString().padStart(2, "0")}/`}
                                 className="puzzlebutton"
                             >
-                                <button className="ghostbutton puzzlebutton">
-                                    {puz.name}
+                                <button className="ghostbutton puzzlebutton" style={{ "--thumb": `url(resources/crosswords/thumbnails/cryptic/${puz.number}.svg)` } as React.CSSProperties}>
+                                    <span>{puz.name}</span>
+                                </button>
+                            </a>
+                        ))}
+                    </div>
+                    <h1>Mini Crosswords</h1>
+                    <div className="puzzlebuttonsgrid">
+                        {miniData.map((puz, i) => (
+                            <a
+                                key={i}
+                                href={`crosswords/mini/${puz.number.toString().padStart(2, "0")}/`}
+                                className="puzzlebutton"
+                            >
+                                <button className="ghostbutton puzzlebutton" style={{ "--thumb": `url(resources/crosswords/thumbnails/mini/${puz.number}.svg)` } as React.CSSProperties}>
+                                    <span>{puz.name}</span>
                                 </button>
                             </a>
                         ))}
