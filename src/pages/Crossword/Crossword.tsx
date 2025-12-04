@@ -20,7 +20,7 @@ function Crossword() {
 									className="ghostbutton puzzlebutton"
 									style={
 										{
-											"--thumb": `url(resources/crosswords/thumbnails/cryptic/${puz.number}.svg)`,
+											"--thumb": `url("/resources/crosswords/thumbnails/cryptic/${puz.number}.svg")`,
 										} as React.CSSProperties
 									}
 								>
