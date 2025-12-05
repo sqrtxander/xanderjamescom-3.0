@@ -685,7 +685,7 @@
 				"id": "6-across",
 				"number": 6,
 				"humanNumber": "6",
-				"clue": "Ones getting passed in a race",
+				"clue": "They get passed in a race",
 				"direction": "across",
 				"length": 5,
 				"group": ["6-across"],
