@@ -114,3 +114,11 @@
 .MyCrossword .AnagramHelper {
     border: 2px solid var(--bg-highlight);
 }
+
+.infoBox {
+    display: flex;
+    width: 100%;
+    min-width: 50%;
+    text-align: center;
+    justify-content: center;
+}

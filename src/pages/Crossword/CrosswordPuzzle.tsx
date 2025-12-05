@@ -37,6 +37,7 @@ function CrosswordPuzzle({
 }) {
 	const [errorred, setErrored] = useState(false);
 	const [loading, setLoading] = useState(true);
+	const [solved, setSolved] = useState(false);
 	const [crossword, setCrossword] = useState({ id: "", name: "" });
 	const { puzzleID } = useParams();
 
@@ -69,7 +70,12 @@ function CrosswordPuzzle({
 			) : (
 				<div className="vstack wide">
 					<h1>{crossword.name}</h1>
-					<MyCrossword data={crossword} id={crossword.id} />
+					<MyCrossword
+						data={crossword}
+						id={crossword.id}
+						onComplete={() => setSolved(true)}
+					/>
+					{solved && <div className="infoBox">&#127881; SOLVED &#127881;</div>}
 				</div>
 			)}
 		</>
