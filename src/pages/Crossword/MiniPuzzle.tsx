@@ -1,4 +1,4 @@
-import miniData from "./minis.json";
+import miniData from "./minis.crossword.json";
 import CrosswordPuzzle from "./CrosswordPuzzle";
 
 function MiniPuzzle() {

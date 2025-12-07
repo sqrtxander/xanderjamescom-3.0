@@ -12,3 +12,10 @@ repos:
         entry: bunx prettier --write
         language: system
         types_or: [javascript, jsx, ts, tsx, json, markdown]
+-   repo: local
+    hooks:
+    -   id: crossword-thumbnail
+        name: crossword-thumbnail
+        entry: thumbnail_generation/crosswords/generate.sh
+        language: system
+        files: '\.crossword\.json$'

@@ -1,4 +1,4 @@
-import crypticData from "./cryptics.json";
+import crypticData from "./cryptics.crossword.json";
 import CrosswordPuzzle from "./CrosswordPuzzle";
 
 function MiniPuzzle() {

@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
 import "./Crossword.css";
-import crypticData from "./cryptics.json";
-import miniData from "./minis.json";
+import crypticData from "./cryptics.crossword.json";
+import miniData from "./minis.crossword.json";
 
 function Crossword() {
     return (
@@ -21,7 +21,7 @@ function Crossword() {
                                     className="ghostbutton puzzlebutton"
                                     style={
                                         {
-                                            "--thumb": `url("/resources/crosswords/thumbnails/cryptic/${puz.number}.svg")`,
+                                            "--thumb": `url("/resources/crosswords/thumbnails/cryptics/${puz.number}.svg")`,
                                         } as React.CSSProperties
                                     }
                                 >
@@ -42,7 +42,7 @@ function Crossword() {
                                     className="ghostbutton puzzlebutton"
                                     style={
                                         {
-                                            "--thumb": `url("/resources/crosswords/thumbnails/mini/${puz.number}.svg")`,
+                                            "--thumb": `url("/resources/crosswords/thumbnails/minis/${puz.number}.svg")`,
                                         } as React.CSSProperties
                                     }
                                 >
