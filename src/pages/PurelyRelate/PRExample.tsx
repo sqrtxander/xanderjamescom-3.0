@@ -4,8 +4,8 @@ import { IconContext } from "react-icons";
 import { LuEye, LuEyeClosed } from "react-icons/lu";
 
 function PRExample() {
-    const [flippedAll, setFlippedAll] = useState(false);
-    const flipAll = () => setFlippedAll(!flippedAll)
+	const [flippedAll, setFlippedAll] = useState(false);
+	const flipAll = () => setFlippedAll(!flippedAll);
 	return (
 		<div>
 			<h1 id="overview">Overview and Examples</h1>
@@ -34,9 +34,15 @@ function PRExample() {
 			</ul>
 			<Round1
 				glyph="O"
-				clues={["Jade", "Mint", "Chartreuse", "Emerald"]}
-				relation="Shades of green"
-                flippedAll={flippedAll}
+				clues={[
+					"Wheel mounted gun",
+					"Two player board game with destroyers",
+					"Magician's headwear",
+					"Thumb protector",
+				]}
+				relation="Original Monopoly tokens"
+                explanation={"Cannon, battleship, top hat, thimble"}
+				flippedAll={flippedAll}
 			/>
 
 			<h2>Round 2: Progressions</h2>
@@ -65,7 +71,7 @@ function PRExample() {
 					"(e.g.) Stop sign",
 				]}
 				relation="Pentagon to octagon"
-                flippedAll={flippedAll}
+				flippedAll={flippedAll}
 			/>
 
 			<h2>Round 3: Relating Surfaces</h2>
@@ -105,7 +111,7 @@ function PRExample() {
 						relation: "Body coverings",
 					},
 				]}
-                flippedAll={flippedAll}
+				flippedAll={flippedAll}
 			/>
 
 			<h2>Round 4: Consonants Only</h2>
@@ -134,7 +140,7 @@ function PRExample() {
 					{ clue: "X MP LGRT", answer: "EXEMPLI GRATIA" },
 				]}
 				relation="For example"
-                flippedAll={flippedAll}
+				flippedAll={flippedAll}
 			/>
 		</div>
 	);
