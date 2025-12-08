@@ -409,7 +409,7 @@
                 "id": "1-across",
                 "number": 1,
                 "humanNumber": "1",
-                "clue": "8 spades or 9 diamonds in 500, for example",
+                "clue": "Calls like 8 spades or 9 diamonds in 500",
                 "direction": "across",
                 "length": 4,
                 "group": ["1-across"],
@@ -685,7 +685,7 @@
                 "id": "6-across",
                 "number": 6,
                 "humanNumber": "6",
-                "clue": "They get passed in a race",
+                "clue": "Ones getting passed in a race",
                 "direction": "across",
                 "length": 5,
                 "group": ["6-across"],
@@ -788,6 +788,978 @@
                 "position": { "x": 4, "y": 0 },
                 "separatorLocations": {},
                 "solution": "KNEES"
+            }
+        ]
+    },
+    {
+        "id": "minicrosswords/7",
+        "number": 7,
+        "name": "7.",
+        "dimensions": {
+            "cols": 5,
+            "rows": 5
+        },
+        "solutionAvailable": true,
+        "entries": [
+            {
+                "id": "1-across",
+                "number": 1,
+                "humanNumber": "1",
+                "clue": "Looney Tunes bunny",
+                "direction": "across",
+                "length": 4,
+                "group": ["1-across"],
+                "position": {
+                    "x": 1,
+                    "y": 0
+                },
+                "separatorLocations": {},
+                "solution": "BUGS"
+            },
+            {
+                "id": "5-across",
+                "number": 5,
+                "humanNumber": "5",
+                "clue": "No",
+                "direction": "across",
+                "length": 4,
+                "group": ["5-across"],
+                "position": {
+                    "x": 1,
+                    "y": 1
+                },
+                "separatorLocations": {},
+                "solution": "UHUH"
+            },
+            {
+                "id": "6-across",
+                "number": 6,
+                "humanNumber": "6",
+                "clue": "Hello in Beijing",
+                "direction": "across",
+                "length": 5,
+                "group": ["6-across"],
+                "position": {
+                    "x": 0,
+                    "y": 2
+                },
+                "separatorLocations": {},
+                "solution": "NIHAO"
+            },
+            {
+                "id": "7-across",
+                "number": 7,
+                "humanNumber": "7",
+                "clue": "English actress, Emily",
+                "direction": "across",
+                "length": 5,
+                "group": ["7-across"],
+                "position": {
+                    "x": 0,
+                    "y": 3
+                },
+                "separatorLocations": {},
+                "solution": "BLUNT"
+            },
+            {
+                "id": "8-across",
+                "number": 8,
+                "humanNumber": "8",
+                "clue": "Friend of Porthos and Aramis",
+                "direction": "across",
+                "length": 5,
+                "group": ["8-across"],
+                "position": {
+                    "x": 0,
+                    "y": 4
+                },
+                "separatorLocations": {},
+                "solution": "ATHOS"
+            },
+            {
+                "id": "1-down",
+                "number": 1,
+                "humanNumber": "1",
+                "clue": "Established",
+                "direction": "down",
+                "length": 5,
+                "group": ["1-down"],
+                "position": {
+                    "x": 1,
+                    "y": 0
+                },
+                "separatorLocations": {},
+                "solution": "BUILT"
+            },
+            {
+                "id": "2-down",
+                "number": 2,
+                "humanNumber": "2",
+                "clue": "Yes",
+                "direction": "down",
+                "length": 5,
+                "group": ["2-down"],
+                "position": {
+                    "x": 2,
+                    "y": 0
+                },
+                "separatorLocations": {},
+                "solution": "UHHUH"
+            },
+            {
+                "id": "3-down",
+                "number": 3,
+                "humanNumber": "3",
+                "clue": "Bird deposited fertiliser",
+                "direction": "down",
+                "length": 5,
+                "group": ["3-down"],
+                "position": {
+                    "x": 3,
+                    "y": 0
+                },
+                "separatorLocations": {},
+                "solution": "GUANO"
+            },
+            {
+                "id": "4-down",
+                "number": 4,
+                "humanNumber": "4",
+                "clue": "Espresso measurements",
+                "direction": "down",
+                "length": 5,
+                "group": ["4-down"],
+                "position": {
+                    "x": 4,
+                    "y": 0
+                },
+                "separatorLocations": {},
+                "solution": "SHOTS"
+            },
+            {
+                "id": "6-down",
+                "number": 6,
+                "humanNumber": "6",
+                "clue": "Org. with Magic and Wizards",
+                "direction": "down",
+                "length": 3,
+                "group": ["6-down"],
+                "position": {
+                    "x": 0,
+                    "y": 2
+                },
+                "separatorLocations": {},
+                "solution": "NBA"
+            }
+        ]
+    },
+    {
+        "id": "minicrosswords/8",
+        "number": 8,
+        "name": "8.",
+        "dimensions": {
+            "cols": 5,
+            "rows": 5
+        },
+        "solutionAvailable": true,
+        "entries": [
+            {
+                "id": "1-across",
+                "number": 1,
+                "humanNumber": "1",
+                "clue": "Snakes",
+                "direction": "across",
+                "length": 4,
+                "group": ["1-across"],
+                "position": {
+                    "x": 0,
+                    "y": 0
+                },
+                "separatorLocations": {},
+                "solution": "ASPS"
+            },
+            {
+                "id": "5-across",
+                "number": 5,
+                "humanNumber": "5",
+                "clue": "Title for Sidious or Maul",
+                "direction": "across",
+                "length": 5,
+                "group": ["5-across"],
+                "position": {
+                    "x": 0,
+                    "y": 1
+                },
+                "separatorLocations": {},
+                "solution": "DARTH"
+            },
+            {
+                "id": "7-across",
+                "number": 7,
+                "humanNumber": "7",
+                "clue": "\"Move over!\"",
+                "direction": "across",
+                "length": 5,
+                "group": ["7-across"],
+                "position": {
+                    "x": 0,
+                    "y": 2
+                },
+                "separatorLocations": {},
+                "solution": "SCOOT"
+            },
+            {
+                "id": "8-across",
+                "number": 8,
+                "humanNumber": "8",
+                "clue": "One nautical mile per hour",
+                "direction": "across",
+                "length": 4,
+                "group": ["8-across"],
+                "position": {
+                    "x": 1,
+                    "y": 3
+                },
+                "separatorLocations": {},
+                "solution": "KNOT"
+            },
+            {
+                "id": "9-across",
+                "number": 9,
+                "humanNumber": "9",
+                "clue": "Economy stat.",
+                "direction": "across",
+                "length": 3,
+                "group": ["9-across"],
+                "position": {
+                    "x": 2,
+                    "y": 4
+                },
+                "separatorLocations": {},
+                "solution": "GDP"
+            },
+            {
+                "id": "1-down",
+                "number": 1,
+                "humanNumber": "1",
+                "clue": "Remove ___; common in-app purchase",
+                "direction": "down",
+                "length": 3,
+                "group": ["1-down"],
+                "position": {
+                    "x": 0,
+                    "y": 0
+                },
+                "separatorLocations": {},
+                "solution": "ADS"
+            },
+            {
+                "id": "2-down",
+                "number": 2,
+                "humanNumber": "2",
+                "clue": "Potato receptacle",
+                "direction": "down",
+                "length": 4,
+                "group": ["2-down"],
+                "position": {
+                    "x": 1,
+                    "y": 0
+                },
+                "separatorLocations": {},
+                "solution": "SACK"
+            },
+            {
+                "id": "3-down",
+                "number": 3,
+                "humanNumber": "3",
+                "clue": "Fork feature",
+                "direction": "down",
+                "length": 5,
+                "group": ["3-down"],
+                "position": {
+                    "x": 2,
+                    "y": 0
+                },
+                "separatorLocations": {},
+                "solution": "PRONG"
+            },
+            {
+                "id": "4-down",
+                "number": 4,
+                "humanNumber": "4",
+                "clue": "Got up from a chair",
+                "direction": "down",
+                "length": 5,
+                "group": ["4-down"],
+                "position": {
+                    "x": 3,
+                    "y": 0
+                },
+                "separatorLocations": {},
+                "solution": "STOOD"
+            },
+            {
+                "id": "6-down",
+                "number": 6,
+                "humanNumber": "6",
+                "clue": "Web protocol (abbr.)",
+                "direction": "down",
+                "length": 4,
+                "group": ["6-down"],
+                "position": {
+                    "x": 4,
+                    "y": 1
+                },
+                "separatorLocations": {},
+                "solution": "HTTP"
+            }
+        ]
+    },
+    {
+        "id": "9",
+        "number": 9,
+        "name": "9.",
+        "dimensions": {
+            "cols": 5,
+            "rows": 5
+        },
+        "solutionAvailable": true,
+        "entries": [
+            {
+                "id": "1-across",
+                "number": 1,
+                "humanNumber": "1",
+                "clue": "Journalist's pride",
+                "direction": "across",
+                "length": 5,
+                "group": ["1-across"],
+                "position": {
+                    "x": 0,
+                    "y": 0
+                },
+                "separatorLocations": {},
+                "solution": "SCOOP"
+            },
+            {
+                "id": "6-across",
+                "number": 6,
+                "humanNumber": "6",
+                "clue": "Prefix meaning \"correct\"",
+                "direction": "across",
+                "length": 5,
+                "group": ["6-across"],
+                "position": {
+                    "x": 0,
+                    "y": 1
+                },
+                "separatorLocations": {},
+                "solution": "ORTHO"
+            },
+            {
+                "id": "7-across",
+                "number": 7,
+                "humanNumber": "7",
+                "clue": "Related to birth",
+                "direction": "across",
+                "length": 5,
+                "group": ["7-across"],
+                "position": {
+                    "x": 0,
+                    "y": 2
+                },
+                "separatorLocations": {},
+                "solution": "NATAL"
+            },
+            {
+                "id": "8-across",
+                "number": 8,
+                "humanNumber": "8",
+                "clue": "Courtroom typist, briefly",
+                "direction": "across",
+                "length": 5,
+                "group": ["8-across"],
+                "position": {
+                    "x": 0,
+                    "y": 3
+                },
+                "separatorLocations": {},
+                "solution": "STENO"
+            },
+            {
+                "id": "9-across",
+                "number": 9,
+                "humanNumber": "9",
+                "clue": "Period",
+                "direction": "across",
+                "length": 3,
+                "group": ["9-across"],
+                "position": {
+                    "x": 1,
+                    "y": 4
+                },
+                "separatorLocations": {},
+                "solution": "ERA"
+            },
+            {
+                "id": "1-down",
+                "number": 1,
+                "humanNumber": "1",
+                "clue": "Steinway &amp; ____; piano manufacturer",
+                "direction": "down",
+                "length": 4,
+                "group": ["1-down"],
+                "position": {
+                    "x": 0,
+                    "y": 0
+                },
+                "separatorLocations": {},
+                "solution": "SONS"
+            },
+            {
+                "id": "2-down",
+                "number": 2,
+                "humanNumber": "2",
+                "clue": "Box for milk bottles",
+                "direction": "down",
+                "length": 5,
+                "group": ["2-down"],
+                "position": {
+                    "x": 1,
+                    "y": 0
+                },
+                "separatorLocations": {},
+                "solution": "CRATE"
+            },
+            {
+                "id": "3-down",
+                "number": 3,
+                "humanNumber": "3",
+                "clue": "Animal with the densest fur",
+                "direction": "down",
+                "length": 5,
+                "group": ["3-down"],
+                "position": {
+                    "x": 2,
+                    "y": 0
+                },
+                "separatorLocations": {},
+                "solution": "OTTER"
+            },
+            {
+                "id": "4-down",
+                "number": 4,
+                "humanNumber": "4",
+                "clue": "Family in Hawaii",
+                "direction": "down",
+                "length": 5,
+                "group": ["4-down"],
+                "position": {
+                    "x": 3,
+                    "y": 0
+                },
+                "separatorLocations": {},
+                "solution": "OHANA"
+            },
+            {
+                "id": "5-down",
+                "number": 5,
+                "humanNumber": "5",
+                "clue": "British breath mint",
+                "direction": "down",
+                "length": 4,
+                "group": ["5-down"],
+                "position": {
+                    "x": 4,
+                    "y": 0
+                },
+                "separatorLocations": {},
+                "solution": "POLO"
+            }
+        ]
+    },
+    {
+        "id": "10",
+        "number": 10,
+        "name": "10.",
+        "dimensions": {
+            "cols": 5,
+            "rows": 5
+        },
+        "solutionAvailable": true,
+        "entries": [
+            {
+                "id": "1-across",
+                "number": 1,
+                "humanNumber": "1",
+                "clue": "\"Only Connect\" airer",
+                "direction": "across",
+                "length": 3,
+                "group": ["1-across"],
+                "position": {
+                    "x": 1,
+                    "y": 0
+                },
+                "separatorLocations": {},
+                "solution": "BBC"
+            },
+            {
+                "id": "4-across",
+                "number": 4,
+                "humanNumber": "4",
+                "clue": "Epic poem by Homer",
+                "direction": "across",
+                "length": 5,
+                "group": ["4-across"],
+                "position": {
+                    "x": 0,
+                    "y": 1
+                },
+                "separatorLocations": {},
+                "solution": "ILIAD"
+            },
+            {
+                "id": "6-across",
+                "number": 6,
+                "humanNumber": "6",
+                "clue": "Word after \"common\" or \"sixth\"",
+                "direction": "across",
+                "length": 5,
+                "group": ["6-across"],
+                "position": {
+                    "x": 0,
+                    "y": 2
+                },
+                "separatorLocations": {},
+                "solution": "SENSE"
+            },
+            {
+                "id": "7-across",
+                "number": 7,
+                "humanNumber": "7",
+                "clue": "Vector-voicing Jason",
+                "direction": "across",
+                "length": 5,
+                "group": ["7-across"],
+                "position": {
+                    "x": 0,
+                    "y": 3
+                },
+                "separatorLocations": {},
+                "solution": "SEGEL"
+            },
+            {
+                "id": "8-across",
+                "number": 8,
+                "humanNumber": "8",
+                "clue": "Mimics",
+                "direction": "across",
+                "length": 4,
+                "group": ["8-across"],
+                "position": {
+                    "x": 0,
+                    "y": 4
+                },
+                "separatorLocations": {},
+                "solution": "APES"
+            },
+            {
+                "id": "1-down",
+                "number": 1,
+                "humanNumber": "1",
+                "clue": "Substitute for an expletive",
+                "direction": "down",
+                "length": 5,
+                "group": ["1-down"],
+                "position": {
+                    "x": 1,
+                    "y": 0
+                },
+                "separatorLocations": {},
+                "solution": "BLEEP"
+            },
+            {
+                "id": "2-down",
+                "number": 2,
+                "humanNumber": "2",
+                "clue": "Overindulge in Stan, say",
+                "direction": "down",
+                "length": 5,
+                "group": ["2-down"],
+                "position": {
+                    "x": 2,
+                    "y": 0
+                },
+                "separatorLocations": {},
+                "solution": "BINGE"
+            },
+            {
+                "id": "3-down",
+                "number": 3,
+                "humanNumber": "3",
+                "clue": "Jobs for lawyers",
+                "direction": "down",
+                "length": 5,
+                "group": ["3-down"],
+                "position": {
+                    "x": 3,
+                    "y": 0
+                },
+                "separatorLocations": {},
+                "solution": "CASES"
+            },
+            {
+                "id": "4-down",
+                "number": 4,
+                "humanNumber": "4",
+                "clue": "The Chase Australia's \"The Supernerd\"",
+                "direction": "down",
+                "length": 4,
+                "group": ["4-down"],
+                "position": {
+                    "x": 0,
+                    "y": 1
+                },
+                "separatorLocations": {},
+                "solution": "ISSA"
+            },
+            {
+                "id": "5-down",
+                "number": 5,
+                "humanNumber": "5",
+                "clue": "Keyboard key (abbr.)",
+                "direction": "down",
+                "length": 3,
+                "group": ["5-down"],
+                "position": {
+                    "x": 4,
+                    "y": 1
+                },
+                "separatorLocations": {},
+                "solution": "DEL"
+            }
+        ]
+    },
+    {
+        "id": "11",
+        "number": 11,
+        "name": "11.",
+        "dimensions": {
+            "cols": 5,
+            "rows": 5
+        },
+        "solutionAvailable": true,
+        "entries": [
+            {
+                "id": "1-across",
+                "number": 1,
+                "humanNumber": "1",
+                "clue": "Toys' ammo",
+                "direction": "across",
+                "length": 3,
+                "group": ["1-across"],
+                "position": {
+                    "x": 0,
+                    "y": 0
+                },
+                "separatorLocations": {},
+                "solution": "BBS"
+            },
+            {
+                "id": "4-across",
+                "number": 4,
+                "humanNumber": "4",
+                "clue": "Deliver an address, say",
+                "direction": "across",
+                "length": 5,
+                "group": ["4-across"],
+                "position": {
+                    "x": 0,
+                    "y": 1
+                },
+                "separatorLocations": {},
+                "solution": "ORATE"
+            },
+            {
+                "id": "7-across",
+                "number": 7,
+                "humanNumber": "7",
+                "clue": "Caiman's relative",
+                "direction": "across",
+                "length": 5,
+                "group": ["7-across"],
+                "position": {
+                    "x": 0,
+                    "y": 2
+                },
+                "separatorLocations": {},
+                "solution": "GATOR"
+            },
+            {
+                "id": "8-across",
+                "number": 8,
+                "humanNumber": "8",
+                "clue": "Dodge",
+                "direction": "across",
+                "length": 5,
+                "group": ["8-across"],
+                "position": {
+                    "x": 0,
+                    "y": 3
+                },
+                "separatorLocations": {},
+                "solution": "EVADE"
+            },
+            {
+                "id": "9-across",
+                "number": 9,
+                "humanNumber": "9",
+                "clue": "Toy that you throw",
+                "direction": "across",
+                "length": 4,
+                "group": ["9-across"],
+                "position": {
+                    "x": 0,
+                    "y": 4
+                },
+                "separatorLocations": {},
+                "solution": "YOYO"
+            },
+            {
+                "id": "1-down",
+                "number": 1,
+                "humanNumber": "1",
+                "clue": "Golf score",
+                "direction": "down",
+                "length": 5,
+                "group": ["1-down"],
+                "position": {
+                    "x": 0,
+                    "y": 0
+                },
+                "separatorLocations": {},
+                "solution": "BOGEY"
+            },
+            {
+                "id": "2-down",
+                "number": 2,
+                "humanNumber": "2",
+                "clue": "\"Well done\"",
+                "direction": "down",
+                "length": 5,
+                "group": ["2-down"],
+                "position": {
+                    "x": 1,
+                    "y": 0
+                },
+                "separatorLocations": {},
+                "solution": "BRAVO"
+            },
+            {
+                "id": "3-down",
+                "number": 3,
+                "humanNumber": "3",
+                "clue": "Peanut sauce",
+                "direction": "down",
+                "length": 5,
+                "group": ["3-down"],
+                "position": {
+                    "x": 2,
+                    "y": 0
+                },
+                "separatorLocations": {},
+                "solution": "SATAY"
+            },
+            {
+                "id": "5-down",
+                "number": 5,
+                "humanNumber": "5",
+                "clue": "Heading on an errand list",
+                "direction": "down",
+                "length": 4,
+                "group": ["5-down"],
+                "position": {
+                    "x": 3,
+                    "y": 1
+                },
+                "separatorLocations": {},
+                "solution": "TODO"
+            },
+            {
+                "id": "6-down",
+                "number": 6,
+                "humanNumber": "6",
+                "clue": "Before before",
+                "direction": "down",
+                "length": 3,
+                "group": ["6-down"],
+                "position": {
+                    "x": 4,
+                    "y": 1
+                },
+                "separatorLocations": {},
+                "solution": "ERE"
+            }
+        ]
+    },
+    {
+        "id": "12",
+        "number": 12,
+        "name": "12.",
+        "dimensions": {
+            "cols": 5,
+            "rows": 5
+        },
+        "solutionAvailable": true,
+        "entries": [
+            {
+                "id": "1-across",
+                "number": 1,
+                "humanNumber": "1",
+                "clue": "Unprocessed",
+                "direction": "across",
+                "length": 3,
+                "group": ["1-across"],
+                "position": {
+                    "x": 2,
+                    "y": 0
+                },
+                "separatorLocations": {},
+                "solution": "RAW"
+            },
+            {
+                "id": "4-across",
+                "number": 4,
+                "humanNumber": "4",
+                "clue": "Bus",
+                "direction": "across",
+                "length": 5,
+                "group": ["4-across"],
+                "position": {
+                    "x": 0,
+                    "y": 1
+                },
+                "separatorLocations": {},
+                "solution": "COACH"
+            },
+            {
+                "id": "6-across",
+                "number": 6,
+                "humanNumber": "6",
+                "clue": "Straight _____ Compton (N.W.A debut album)",
+                "direction": "across",
+                "length": 5,
+                "group": ["6-across"],
+                "position": {
+                    "x": 0,
+                    "y": 2
+                },
+                "separatorLocations": {},
+                "solution": "OUTTA"
+            },
+            {
+                "id": "7-across",
+                "number": 7,
+                "humanNumber": "7",
+                "clue": "Rainbow-making crystal",
+                "direction": "across",
+                "length": 5,
+                "group": ["7-across"],
+                "position": {
+                    "x": 0,
+                    "y": 3
+                },
+                "separatorLocations": {},
+                "solution": "PRISM"
+            },
+            {
+                "id": "8-across",
+                "number": 8,
+                "humanNumber": "8",
+                "clue": "\"That\" in Spanish",
+                "direction": "across",
+                "length": 3,
+                "group": ["8-across"],
+                "position": {
+                    "x": 0,
+                    "y": 4
+                },
+                "separatorLocations": {},
+                "solution": "ESO"
+            },
+            {
+                "id": "1-down",
+                "number": 1,
+                "humanNumber": "1",
+                "clue": "3720:1 for example",
+                "direction": "down",
+                "length": 5,
+                "group": ["1-down"],
+                "position": {
+                    "x": 2,
+                    "y": 0
+                },
+                "separatorLocations": {},
+                "solution": "RATIO"
+            },
+            {
+                "id": "2-down",
+                "number": 2,
+                "humanNumber": "2",
+                "clue": "Bible book",
+                "direction": "down",
+                "length": 4,
+                "group": ["2-down"],
+                "position": {
+                    "x": 3,
+                    "y": 0
+                },
+                "separatorLocations": {},
+                "solution": "ACTS"
+            },
+            {
+                "id": "3-down",
+                "number": 3,
+                "humanNumber": "3",
+                "clue": "\"Last Christmas\" duo",
+                "direction": "down",
+                "length": 4,
+                "group": ["3-down"],
+                "position": {
+                    "x": 4,
+                    "y": 0
+                },
+                "separatorLocations": {},
+                "solution": "WHAM"
+            },
+            {
+                "id": "4-down",
+                "number": 4,
+                "humanNumber": "4",
+                "clue": "Get by",
+                "direction": "down",
+                "length": 4,
+                "group": ["4-down"],
+                "position": {
+                    "x": 0,
+                    "y": 1
+                },
+                "separatorLocations": {},
+                "solution": "COPE"
+            },
+            {
+                "id": "5-down",
+                "number": 5,
+                "humanNumber": "5",
+                "clue": "Of us",
+                "direction": "down",
+                "length": 4,
+                "group": ["5-down"],
+                "position": {
+                    "x": 1,
+                    "y": 1
+                },
+                "separatorLocations": {},
+                "solution": "OURS"
             }
         ]
     }

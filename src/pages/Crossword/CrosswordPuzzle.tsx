@@ -68,11 +68,12 @@ function CrosswordPuzzle({
             ) : loading ? (
                 <p>LOADING...</p>
             ) : (
-                <div className="vstack wide">
+                <div className="vstack wide crosswordcontainer">
                     <h1>{crossword.name}</h1>
                     <MyCrossword
                         data={crossword}
                         id={crossword.id}
+                        className="MyMyCrosswordTheme"
                         onComplete={() => setSolved(true)}
                     />
                     {solved && (
