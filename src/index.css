@@ -41,11 +41,13 @@
 }
 
 html,
-body {
+body,
+#root {
 	margin: 0;
 	padding: 0;
 	background: var(--bg);
 	color: var(--fg);
+    height: 100%;
 }
 
 h1,

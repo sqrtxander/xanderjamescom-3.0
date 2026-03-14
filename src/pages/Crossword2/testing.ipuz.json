@@ -1,0 +1,431 @@
+{
+  "version": "http://ipuz.org/v2",
+  "kind": ["http://ipuz.org/crossword/crypticcrossword#1"],
+  "dimensions": { "width": 11, "height": 11 },
+  "puzzle": [
+    [
+      { "cell": "1", "style": {} },
+      { "cell": "#" },
+      { "cell": "2", "style": {} },
+      { "cell": "#" },
+      { "cell": "3", "style": {} },
+      { "cell": "#" },
+      { "cell": "4", "style": {} },
+      { "cell": "#" },
+      { "cell": "5", "style": {} },
+      { "cell": "#" },
+      { "cell": "6", "style": {} }
+    ],
+    [
+      { "cell": "7", "style": {} },
+      { "cell": "0", "style": {} },
+      { "cell": "0", "style": {} },
+      { "cell": "0", "style": {} },
+      { "cell": "0", "style": {} },
+      { "cell": "0", "style": {} },
+      { "cell": "0", "style": {} },
+      { "cell": "#" },
+      { "cell": "8", "style": {} },
+      { "cell": "0", "style": {} },
+      { "cell": "0", "style": {} }
+    ],
+    [
+      { "cell": "0", "style": {} },
+      { "cell": "#" },
+      { "cell": "0", "style": {} },
+      { "cell": "#" },
+      { "cell": "0", "style": {} },
+      { "cell": "#" },
+      { "cell": "0", "style": {} },
+      { "cell": "#" },
+      { "cell": "0", "style": {} },
+      { "cell": "#" },
+      { "cell": "0", "style": {} }
+    ],
+    [
+      { "cell": "9", "style": {} },
+      { "cell": "0", "style": {} },
+      { "cell": "0", "style": {} },
+      { "cell": "0", "style": {} },
+      { "cell": "0", "style": {} },
+      { "cell": "#" },
+      { "cell": "10", "style": {} },
+      { "cell": "0", "style": {} },
+      { "cell": "0", "style": {} },
+      { "cell": "0", "style": {} },
+      { "cell": "0", "style": {} }
+    ],
+    [
+      { "cell": "#" },
+      { "cell": "#" },
+      { "cell": "0", "style": {} },
+      { "cell": "#" },
+      { "cell": "#" },
+      { "cell": "#" },
+      { "cell": "0", "style": {} },
+      { "cell": "#" },
+      { "cell": "#" },
+      { "cell": "#" },
+      { "cell": "0", "style": {} }
+    ],
+    [
+      { "cell": "11", "style": {} },
+      { "cell": "0", "style": {} },
+      { "cell": "0", "style": {} },
+      { "cell": "0", "style": {} },
+      { "cell": "12", "style": {} },
+      { "cell": "0", "style": {} },
+      { "cell": "0", "style": {} },
+      { "cell": "0", "style": {} },
+      { "cell": "13", "style": {} },
+      { "cell": "0", "style": {} },
+      { "cell": "0", "style": {} }
+    ],
+    [
+      { "cell": "0", "style": {} },
+      { "cell": "#" },
+      { "cell": "#" },
+      { "cell": "#" },
+      { "cell": "0", "style": {} },
+      { "cell": "#" },
+      { "cell": "#" },
+      { "cell": "#" },
+      { "cell": "0", "style": {} },
+      { "cell": "#" },
+      { "cell": "#" }
+    ],
+    [
+      { "cell": "14", "style": {} },
+      { "cell": "0", "style": {} },
+      { "cell": "15", "style": {} },
+      { "cell": "0", "style": {} },
+      { "cell": "0", "style": {} },
+      { "cell": "#" },
+      { "cell": "16", "style": {} },
+      { "cell": "0", "style": {} },
+      { "cell": "0", "style": {} },
+      { "cell": "0", "style": {} },
+      { "cell": "17", "style": {} }
+    ],
+    [
+      { "cell": "0", "style": {} },
+      { "cell": "#" },
+      { "cell": "0", "style": {} },
+      { "cell": "#" },
+      { "cell": "0", "style": {} },
+      { "cell": "#" },
+      { "cell": "0", "style": {} },
+      { "cell": "#" },
+      { "cell": "0", "style": {} },
+      { "cell": "#" },
+      { "cell": "0", "style": {} }
+    ],
+    [
+      { "cell": "18", "style": {} },
+      { "cell": "0", "style": {} },
+      { "cell": "0", "style": {} },
+      { "cell": "#" },
+      { "cell": "19", "style": {} },
+      { "cell": "0", "style": {} },
+      { "cell": "0", "style": {} },
+      { "cell": "0", "style": {} },
+      { "cell": "0", "style": {} },
+      { "cell": "0", "style": {} },
+      { "cell": "0", "style": {} }
+    ],
+    [
+      { "cell": "0", "style": {} },
+      { "cell": "#" },
+      { "cell": "0", "style": {} },
+      { "cell": "#" },
+      { "cell": "0", "style": {} },
+      { "cell": "#" },
+      { "cell": "0", "style": {} },
+      { "cell": "#" },
+      { "cell": "0", "style": {} },
+      { "cell": "#" },
+      { "cell": "0", "style": {} }
+    ]
+  ],
+  "clues": {
+    "Across": [
+      {
+        "number": "7",
+        "label": "7",
+        "clue": "Left cheese out for worms (7)",
+        "answer": "LEECHES"
+      },
+      {
+        "number": "8",
+        "label": "8",
+        "clue": "See about old John (3)",
+        "answer": "LOO"
+      },
+      {
+        "number": "9",
+        "label": "9",
+        "clue": "Daring bachelor party (5)",
+        "answer": "BRAVE"
+      },
+      {
+        "number": "10",
+        "label": "10",
+        "clue": "Uniform patcher's heading for a superior (5)",
+        "answer": "UPPER"
+      },
+      {
+        "number": "11",
+        "label": "11",
+        "clue": "Rip off mini dress (5-6)",
+        "answer": "SHORT-CHANGE"
+      },
+      {
+        "number": "14",
+        "label": "14",
+        "clue": "Frequently visit one found in search (5)",
+        "answer": "HAUNT"
+      },
+      {
+        "number": "16",
+        "label": "16",
+        "clue": "It's extracted from mines initially, and elsewhere (5)",
+        "answer": "METAL"
+      },
+      {
+        "number": "18",
+        "label": "18",
+        "clue": "Red onion exists primarily for eggs (3)",
+        "answer": "ROE"
+      },
+      {
+        "number": "19",
+        "label": "19",
+        "clue": "Newlywed after extremely likeable first-class luxury (7)",
+        "answer": "LEGROOM"
+      }
+    ],
+    "Down": [
+      {
+        "number": "1",
+        "label": "1",
+        "clue": "Exclusive group member in a black suit (4)",
+        "answer": "CLUB"
+      },
+      {
+        "number": "2",
+        "label": "2",
+        "clue": "Gelato churned smoothly (6)",
+        "answer": "LEGATO"
+      },
+      {
+        "number": "3",
+        "label": "3",
+        "clue": "Half shoves head of elephant trainer? (4)",
+        "answer": "SHOE"
+      },
+      {
+        "number": "4",
+        "label": "4",
+        "clue": "In that regard, a swear word upset husband (2,4)",
+        "answer": "AS SUCH"
+      },
+      {
+        "number": "5",
+        "label": "5",
+        "clue": "Locked in pupil fixes up turn (4)",
+        "answer": "FLIP"
+      },
+      {
+        "number": "6",
+        "label": "6",
+        "clue": "Obscene programme broadcast (6)",
+        "answer": "COARSE"
+      },
+      {
+        "number": "11",
+        "label": "11",
+        "clue": "Ball sport's first duo in attendance (6)",
+        "answer": "SPHERE"
+      },
+      {
+        "number": "12",
+        "label": "12",
+        "clue": "Gossip time after time in story (6)",
+        "answer": "TATTLE"
+      },
+      {
+        "number": "13",
+        "label": "13",
+        "clue": "I put in unacceptable idea (6)",
+        "answer": "NOTION"
+      },
+      {
+        "number": "15",
+        "label": "15",
+        "clue": "Addict buys beer every second (4)",
+        "answer": "USER"
+      },
+      {
+        "number": "16",
+        "label": "16",
+        "clue": "Picture hiding one wizard (4)",
+        "answer": "MAGE"
+      },
+      {
+        "number": "17",
+        "label": "17",
+        "clue": "Go up, chopping first branch (4)",
+        "answer": "LIMB"
+      }
+    ]
+  },
+  "title": "Crossword",
+  "author": "Exetter",
+  "showenumerations": true,
+  "solution": [
+    [
+      { "value": "C" },
+      { "value": "#" },
+      { "value": "L" },
+      { "value": "#" },
+      { "value": "S" },
+      { "value": "#" },
+      { "value": "A" },
+      { "value": "#" },
+      { "value": "F" },
+      { "value": "#" },
+      { "value": "C" }
+    ],
+    [
+      { "value": "L" },
+      { "value": "E" },
+      { "value": "E" },
+      { "value": "C" },
+      { "value": "H" },
+      { "value": "E" },
+      { "value": "S" },
+      { "value": "#" },
+      { "value": "L" },
+      { "value": "O" },
+      { "value": "O" }
+    ],
+    [
+      { "value": "U" },
+      { "value": "#" },
+      { "value": "G" },
+      { "value": "#" },
+      { "value": "O" },
+      { "value": "#" },
+      { "value": "S" },
+      { "value": "#" },
+      { "value": "I" },
+      { "value": "#" },
+      { "value": "A" }
+    ],
+    [
+      { "value": "B" },
+      { "value": "R" },
+      { "value": "A" },
+      { "value": "V" },
+      { "value": "E" },
+      { "value": "#" },
+      { "value": "U" },
+      { "value": "P" },
+      { "value": "P" },
+      { "value": "E" },
+      { "value": "R" }
+    ],
+    [
+      { "value": "#" },
+      { "value": "#" },
+      { "value": "T" },
+      { "value": "#" },
+      { "value": "#" },
+      { "value": "#" },
+      { "value": "C" },
+      { "value": "#" },
+      { "value": "#" },
+      { "value": "#" },
+      { "value": "S" }
+    ],
+    [
+      { "value": "S" },
+      { "value": "H" },
+      { "value": "O" },
+      { "value": "R" },
+      { "value": "T" },
+      { "value": "C" },
+      { "value": "H" },
+      { "value": "A" },
+      { "value": "N" },
+      { "value": "G" },
+      { "value": "E" }
+    ],
+    [
+      { "value": "P" },
+      { "value": "#" },
+      { "value": "#" },
+      { "value": "#" },
+      { "value": "A" },
+      { "value": "#" },
+      { "value": "#" },
+      { "value": "#" },
+      { "value": "O" },
+      { "value": "#" },
+      { "value": "#" }
+    ],
+    [
+      { "value": "H" },
+      { "value": "A" },
+      { "value": "U" },
+      { "value": "N" },
+      { "value": "T" },
+      { "value": "#" },
+      { "value": "M" },
+      { "value": "E" },
+      { "value": "T" },
+      { "value": "A" },
+      { "value": "L" }
+    ],
+    [
+      { "value": "E" },
+      { "value": "#" },
+      { "value": "S" },
+      { "value": "#" },
+      { "value": "T" },
+      { "value": "#" },
+      { "value": "A" },
+      { "value": "#" },
+      { "value": "I" },
+      { "value": "#" },
+      { "value": "I" }
+    ],
+    [
+      { "value": "R" },
+      { "value": "O" },
+      { "value": "E" },
+      { "value": "#" },
+      { "value": "L" },
+      { "value": "E" },
+      { "value": "G" },
+      { "value": "R" },
+      { "value": "O" },
+      { "value": "O" },
+      { "value": "M" }
+    ],
+    [
+      { "value": "E" },
+      { "value": "#" },
+      { "value": "R" },
+      { "value": "#" },
+      { "value": "E" },
+      { "value": "#" },
+      { "value": "E" },
+      { "value": "#" },
+      { "value": "N" },
+      { "value": "#" },
+      { "value": "B" }
+    ]
+  ]
+}
+

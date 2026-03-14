@@ -37,25 +37,27 @@ function App() {
     return (
         <div className={`app size-${screenSize}`}>
             <Header theme={theme} switchTheme={switchTheme} />
-            <BrowserRouter>
-                <Routes>
-                    <Route path="/" element={<HomePage />} />
-                    <Route path="/purelyrelate/" element={<PurelyRelate />}>
-                        <Route
-                            path="episode/:episodeID"
-                            element={<PREpisode />}
-                        />
-                    </Route>
-                    <Route path="/crosswords/" element={<Crossword />}>
-                        <Route
-                            path="cryptic/:puzzleID"
-                            element={<CrypticPuzzle />}
-                        />
-                        <Route path="mini/:puzzleID" element={<MiniPuzzle />} />
-                    </Route>
-                    <Route path="*" element={<NotFound />} />
-                </Routes>
-            </BrowserRouter>
+            <div className="appcontent">
+                <BrowserRouter>
+                    <Routes>
+                        <Route path="/" element={<HomePage />} />
+                        <Route path="/purelyrelate/" element={<PurelyRelate />}>
+                            <Route
+                                path="episode/:episodeID"
+                                element={<PREpisode />}
+                            />
+                        </Route>
+                        <Route path="/crosswords/" element={<Crossword />}>
+                            <Route
+                                path="cryptic/:puzzleID"
+                                element={<CrypticPuzzle />}
+                            />
+                            <Route path="mini/:puzzleID" element={<MiniPuzzle />} />
+                        </Route>
+                        <Route path="*" element={<NotFound />} />
+                    </Routes>
+                </BrowserRouter>
+            </div>
         </div>
     );
 }

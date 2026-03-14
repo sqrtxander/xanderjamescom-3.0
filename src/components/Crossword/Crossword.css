@@ -1,0 +1,9 @@
+.crossword-cell .light {
+    background-color: white;
+}
+
+.crossword-grid {
+    background-color: aquamarine;
+    height: 100%;
+    aspect-ratio: 1;
+}
