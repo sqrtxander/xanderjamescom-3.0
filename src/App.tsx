@@ -52,7 +52,10 @@ function App() {
                                 path="cryptic/:puzzleID"
                                 element={<CrypticPuzzle />}
                             />
-                            <Route path="mini/:puzzleID" element={<MiniPuzzle />} />
+                            <Route
+                                path="mini/:puzzleID"
+                                element={<MiniPuzzle />}
+                            />
                         </Route>
                         <Route path="*" element={<NotFound />} />
                     </Routes>
