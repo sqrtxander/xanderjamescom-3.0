@@ -21,6 +21,7 @@ function Puzzle({
                 {hints.map((h, i) => (
                     <Hint key={i} text={h} />
                 ))}
+                <div style={{ height: "2em" }} />
                 <h2>Day {day} Answer Checker</h2>
                 <AnswerChecker answer={solution} />
             </div>

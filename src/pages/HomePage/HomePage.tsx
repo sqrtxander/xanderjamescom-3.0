@@ -2,7 +2,7 @@ import "./HomePage.css";
 
 function HomePage() {
     return (
-        <div className="content">
+        <div className="vstack wide">
             <h1>Hello,</h1>
             <div className="codeblock">
                 <p className="noleading pwd">~</p>

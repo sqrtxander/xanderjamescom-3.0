@@ -25,7 +25,8 @@
 }
 
 .wide {
-    width: 80%;
+    width: calc(100% - 2em);
+    max-width: 800px;
 }
 
 .hcenter {

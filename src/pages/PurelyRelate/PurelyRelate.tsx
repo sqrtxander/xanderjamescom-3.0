@@ -39,7 +39,7 @@ function PurelyRelate() {
                     <h1>Purely Relate</h1>
                     <p>
                         Here you will find questions I have written based on the
-                        BBC Quiz show Only Connect.{" "}
+                        BBC Quiz show Only Connect. <br />
                         <a href="#overview">Jump to Overview and Examples</a>.
                     </p>
                     <h2>Episodes</h2>

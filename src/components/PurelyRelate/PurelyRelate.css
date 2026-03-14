@@ -43,6 +43,10 @@ pre {
     margin-bottom: 0;
 }
 
+.cluecard.big {
+    padding: 0;
+}
+
 .cluecard:hover,
 .answercard:hover,
 .surfacecard:hover,

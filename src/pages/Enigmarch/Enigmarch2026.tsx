@@ -33,7 +33,7 @@ function Enigmarch2026() {
                     "Consider each ring individually",
                     "What shape is formed when joining the points in each ring with straight lines?",
                     "The shapes are isosceles trianges. They look a bit like arrows!",
-                    "Now you can map each ring to a letter, look at the flavour text for the ordering",
+                    "Now that you can map each ring to a letter, look at the flavour text for the ordering",
                 ]}
                 solution="SLINGSHOT"
             />
@@ -42,8 +42,8 @@ function Enigmarch2026() {
                 src="/assets/enigmarch/2026/day04.png"
                 hints={[
                     "How many icons (including covered) are there on the bottom two rows?",
-                    "Can you see a pattern within the visible icons?",
-                    "Can you use this pattern to extrapolate the hidden icons?",
+                    "Can you see a pattern within the visible icons on the bottom two rows?",
+                    "Can you use this pattern to extrapolate the hidden icons on the bottom two rows?",
                 ]}
                 solution="ICON"
             />

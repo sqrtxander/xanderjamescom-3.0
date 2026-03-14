@@ -29,11 +29,13 @@ function AnswerChecker({ answer }: { answer: string }) {
             {checked &&
                 (correct ? (
                     <p className="enigmarchfeedback correct">
-                        {answer} is correct! :)
+                        {answer} is correct!{" "}
+                        <span style={{ whiteSpace: "nowrap" }}>:)</span>
                     </p>
                 ) : (
                     <p className="enigmarchfeedback incorrect">
-                        {guess.toLocaleUpperCase("en")} is incorrect. :(
+                        {guess.toLocaleUpperCase("en")} is incorrect.{" "}
+                        <span style={{ whiteSpace: "nowrap" }}>:(</span>
                     </p>
                 ))}
         </div>

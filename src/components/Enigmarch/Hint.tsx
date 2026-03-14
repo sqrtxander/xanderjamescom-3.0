@@ -7,7 +7,7 @@ function Hint({ text }: { text: string }) {
         <p className="enigmarchhint">
             <span
                 onClick={() => setRevealed(!revealed)}
-                className={revealed ? "" : "hidden"}
+                className={revealed ? "shown" : "hidden"}
             >
                 {text}
             </span>
