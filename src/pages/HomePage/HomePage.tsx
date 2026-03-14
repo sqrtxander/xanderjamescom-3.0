@@ -43,6 +43,10 @@ function HomePage() {
                 <a href="/crosswords">Crosswords</a>
             </h2>
             <p>Cryptic and mini crosswords I have set</p>
+            <h2>
+                <a href="/enigmarch">Enigmarch</a>
+            </h2>
+            <p>Puzzles I set for Enigmarch</p>
         </div>
     );
 }
