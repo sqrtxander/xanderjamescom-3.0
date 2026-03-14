@@ -1,0 +1,14 @@
+.yearsgrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1em;
+}
+
+.yearbutton {
+    aspect-ratio: 7/4;
+    width: 100%
+}
+
+a.yearbutton {
+    text-decoration: none;
+}

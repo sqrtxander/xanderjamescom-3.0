@@ -21,7 +21,7 @@ function Crossword() {
                                     className="ghostbutton puzzlebutton"
                                     style={
                                         {
-                                            "--thumb": `url("/resources/crosswords/thumbnails/cryptics/${puz.number}.svg")`,
+                                            "--thumb": `url("/assets/crosswords/thumbnails/cryptics/${puz.number}.svg")`,
                                         } as React.CSSProperties
                                     }
                                 >
@@ -42,7 +42,7 @@ function Crossword() {
                                     className="ghostbutton puzzlebutton"
                                     style={
                                         {
-                                            "--thumb": `url("/resources/crosswords/thumbnails/minis/${puz.number}.svg")`,
+                                            "--thumb": `url("/assets/crosswords/thumbnails/minis/${puz.number}.svg")`,
                                         } as React.CSSProperties
                                     }
                                 >

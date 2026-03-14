@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-OUT=./public/resources/crosswords/thumbnails
+OUT=./public/assets/crosswords/thumbnails
 
 generated_files=()
 
