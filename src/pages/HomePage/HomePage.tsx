@@ -44,9 +44,9 @@ function HomePage() {
             </h2>
             <p>Cryptic and mini crosswords I have set</p>
             <h2>
-                <a href="/enigmarch">Enigmarch</a>
+                <a href="/enigmarch">EnigMarch</a>
             </h2>
-            <p>Puzzles I set for Enigmarch</p>
+            <p>Puzzles I set for EnigMarch</p>
         </div>
     );
 }

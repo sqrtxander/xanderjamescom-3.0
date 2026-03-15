@@ -6,7 +6,8 @@ function AnswerChecker({ answer }: { answer: string }) {
     const [checked, setChecked] = useState(false);
     const [guess, setGuess] = useState("");
 
-    const verify = () => {
+    const verify = (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
         setChecked(true);
         setCorrect(
             answer.localeCompare(guess, "en", { sensitivity: "base" }) == 0,
@@ -15,17 +16,20 @@ function AnswerChecker({ answer }: { answer: string }) {
 
     return (
         <div>
-            <input
-                className="enigmarchanswer"
-                placeholder="Answer"
-                onChange={(n) => {
-                    setGuess(n.target.value);
-                    setChecked(false);
-                }}
-            />
-            <button onClick={verify} className="ghostbutton enigmarchcheck">
-                Check
-            </button>
+            <form onSubmit={verify}>
+                <input
+                    className="enigmarchanswer"
+                    type="text"
+                    placeholder="Answer"
+                    onChange={(n) => {
+                        setGuess(n.target.value);
+                        setChecked(false);
+                    }}
+                />
+                <button type="submit" className="ghostbutton enigmarchcheck">
+                    Check
+                </button>
+            </form>
             {checked &&
                 (correct ? (
                     <p className="enigmarchfeedback correct">

@@ -3,7 +3,7 @@ import Puzzle from "@/components/Enigmarch/Puzzle";
 function Enigmarch2026() {
     return (
         <>
-            <h1>My Enigmarch 2026 Puzzles</h1>
+            <h1>My EnigMarch 2026 Puzzles</h1>
             <Puzzle
                 day="01"
                 src="/assets/enigmarch/2026/day01.png"
@@ -46,6 +46,16 @@ function Enigmarch2026() {
                     "Can you use this pattern to extrapolate the hidden icons on the bottom two rows?",
                 ]}
                 solution="ICON"
+            />
+            <Puzzle
+                day="05"
+                src="/assets/enigmarch/2026/day05.png"
+                hints={[
+                    "Each pair of numbers in the top string relates to a character in the bottom chunk of text in some way",
+                    "This is a form of book cipher",
+                    "Special characters and spaces are considered in the cipher",
+                ]}
+                solution="DIRECTORY"
             />
         </>
     );

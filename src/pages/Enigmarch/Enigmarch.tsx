@@ -6,7 +6,7 @@ function Enigmarch() {
         <div className="vstack wide">
             {window.location.pathname.replace(/\/$/gim, "") === "/enigmarch" ? (
                 <>
-                    <h1>My Enigmarch Puzzles</h1>
+                    <h1>My EnigMarch Puzzles</h1>
                     <div className="yearsgrid">
                         <a href="enigmarch/2026">
                             <button className="ghostbutton yearbutton">
