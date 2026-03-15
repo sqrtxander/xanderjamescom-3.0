@@ -67,6 +67,19 @@ function Enigmarch2026() {
                 ]}
                 solution="LOVELACE"
             />
+            <Puzzle
+                day="07"
+                src="/assets/enigmarch/2026/day07.png"
+                hints={[
+                    "Each playing card represents a letter in some way",
+                    "Each player's hand represents a word or name that is related to their name",
+                    "Like the other suits, the jokers spell out a word",
+                    "There are five jokers in play, including one face down",
+                    "Of the cards that can represent a letter, which aren't visible?",
+                    "There is only one arrangement of the face-down cards that spells a valid word",
+                ]}
+                solution="MIDDLE"
+            />
         </>
     );
 }
