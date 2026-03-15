@@ -57,6 +57,16 @@ function Enigmarch2026() {
                 ]}
                 solution="DIRECTORY"
             />
+            <Puzzle
+                day="06"
+                src="/assets/enigmarch/2026/day06.png"
+                hints={[
+                    "The notes in the sheet music spell out names",
+                    "The speakers next to 'Structure extending into the water' indicates a homophone",
+                    "This puzzle's answer is not clued directly, instead it uses a clue phrase",
+                ]}
+                solution="LOVELACE"
+            />
         </>
     );
 }

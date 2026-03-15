@@ -74,6 +74,24 @@
     cursor: default;
 }
 
+.size-2xl .grid2or4,
+.size-xl .grid2or4,
+.size-l .grid2or4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid2or4 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+}
+
+.grid2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+}
+
 .size-l,
 .size-xl,
 .size-2xl {

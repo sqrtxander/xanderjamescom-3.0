@@ -1,4 +1,5 @@
 import "./HomePage.css";
+import ProjectCard from "@/components/HomePage/ProjectCard";
 
 function HomePage() {
     return (
@@ -35,18 +36,23 @@ function HomePage() {
                 <p className="noleading codeline"></p>
             </div>
             <h1>My Projects</h1>
-            <h2>
-                <a href="/purelyrelate">Purely Relate</a>
-            </h2>
-            <p>Relating trivia based on the BBC quiz show Only Connect</p>
-            <h2>
-                <a href="/crosswords">Crosswords</a>
-            </h2>
-            <p>Cryptic and mini crosswords I have set</p>
-            <h2>
-                <a href="/enigmarch">EnigMarch</a>
-            </h2>
-            <p>Puzzles I set for EnigMarch</p>
+            <div className="grid2">
+                <ProjectCard
+                    name="EnigMarch"
+                    href="/enigmarch"
+                    about="Puzzles I have set for EnigMarch"
+                />
+                <ProjectCard
+                    name="Purely Relate"
+                    href="/purelyrelate"
+                    about="Relating trivia based on the BBC quiz show Only Connect"
+                />
+                <ProjectCard
+                    name="Crosswords"
+                    href="/crosswords"
+                    about="Cryptic and mini crosswords I have set"
+                />
+            </div>
         </div>
     );
 }

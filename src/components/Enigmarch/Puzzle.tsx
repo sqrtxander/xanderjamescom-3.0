@@ -17,11 +17,10 @@ function Puzzle({
         <div className="enigmarchpuzzle">
             <img src={src} />
             <div className="vstack section">
-                <h2>Day {day} Hints</h2>
+                <h2 style={{ marginTop: "0" }}>Day {day} Hints</h2>
                 {hints.map((h, i) => (
                     <Hint key={i} text={h} />
                 ))}
-                <div style={{ height: "2em" }} />
                 <h2>Day {day} Answer Checker</h2>
                 <AnswerChecker answer={solution} />
             </div>

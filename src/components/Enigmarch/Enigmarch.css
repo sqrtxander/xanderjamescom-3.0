@@ -10,10 +10,6 @@
     gap: 1em;
 }
 
-h2 {
-    margin-top: 0;
-}
-
 .size-2xl .enigmarchpuzzle img,
 .size-xl .enigmarchpuzzle img {
     width: calc(60% - 1em);
