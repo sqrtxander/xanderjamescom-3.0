@@ -1,5 +1,6 @@
 import { Outlet } from "react-router-dom";
 import "./Enigmarch.css";
+import Example from "@/components/Enigmarch/Example";
 
 function Enigmarch() {
     return (
@@ -24,9 +25,14 @@ function Enigmarch() {
                         </a>
                     </div>
                     <h1>My Personal Layout Example</h1>
-                    <img
+                    <Example
                         src="/assets/enigmarch/example.png"
-                        className="enigmarchexample"
+                        hints={[
+                            "This puzzle's answer is hidden in plain sight",
+                            "The answer is literally written in the image",
+                            'The answer is "PUZZLE"',
+                        ]}
+                        solution="PUZZLE"
                     />
                 </>
             ) : (

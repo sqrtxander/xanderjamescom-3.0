@@ -12,7 +12,7 @@ function ProjectCard({
     return (
         <a className="projectcard" href={href}>
             <button className="ghostbutton projectbutton">
-                <h2 className="projectheading">{name}</h2>
+                <h2>{name}</h2>
                 <p>{about}</p>
             </button>
         </a>

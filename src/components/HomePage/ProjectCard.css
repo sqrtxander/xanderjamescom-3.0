@@ -17,6 +17,10 @@ a.projectcard {
     grid-template-rows: 1fr 1fr;
 }
 
-.projectheading {
+.projectbutton h2 {
     align-self: end;
+}
+
+.projectbutton p {
+    align-self: start;
 }
