@@ -1,31 +1,10 @@
 .headerbar {
 	height: var(--header-height);
 	width: 100%;
-	background: var(--red);
+	background: var(--primary);
 	display: flex;
 	position: relative;
-}
-
-.themeswitcher {
-	position: absolute;
-	aspect-ratio: 1;
-	top: 4px;
-	right: 4px;
-	bottom: 4px;
-
-	background: none;
-	border: none;
-	border-radius: 5px;
-
-	transition: background 0.3s;
-}
-
-.themeswitcher:hover {
-	background: color-mix(in srgb, var(--fg) 20%, transparent);
-}
-
-.themeswitcher:active {
-	background: color-mix(in srgb, var(--fg) 40%, transparent);
+    border-bottom: var(--border-thickness) solid var(--fg);
 }
 
 .icon {
@@ -34,7 +13,7 @@
 }
 
 .headertitle {
-	color: var(--bg);
+	color: var(--fg);
 	display: flex;
 	align-items: center;
 	padding-left: 1em;

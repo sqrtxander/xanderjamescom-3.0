@@ -13,6 +13,10 @@
 	flex-direction: column;
 }
 
+/* +-------------+ */
+/* | CONTAINERS  | */
+/* +-------------+ */
+
 .vstack {
 	display: flex;
 	flex-direction: column;
@@ -35,12 +39,13 @@
 }
 
 .wide {
-    width: calc(100% - 2em);
+    width: 100%;
     max-width: 800px;
 }
 
 .main-content {
-    padding: 1em 0;
+    padding: 1em;
+    box-sizing: border-box;
 }
 
 .hcenter {
@@ -61,62 +66,90 @@
 	margin-bottom: 0em;
 }
 
-.ghostbutton {
-	border: 2px solid var(--fg);
-	border-radius: 10px;
-	color: var(--fg);
+/* +-------------+ */
+/* | BUTTONS     | */
+/* +-------------+ */
+
+.ghostbutton,
+.primarybutton,
+.secondarybutton,
+button {
 	display: flex;
 	text-align: center;
 	justify-content: center;
 	align-items: center;
-	background: none;
+    background-color: var(--primary);
 	transition: background 0.3s;
     font-size: inherit;
+	border-radius: var(--border-radius);
+    border: var(--border-thickness) solid;
 }
 
-.ghostbutton:hover {
-	background: color-mix(in srgb, var(--fg) 20%, transparent);
+button:hover {
     cursor: pointer;
 }
 
+button:disabled {
+    cursor: not-allowed;
+}
+
+.ghostbutton {
+	border: var(--border-thickness) solid var(--fg);
+	color: var(--fg);
+}
+
+.ghostbutton:hover {
+	background-color: color-mix(in srgb, var(--fg) 20%, transparent);
+}
+
 .ghostbutton:active {
-	background: color-mix(in srgb, var(--fg) 40%, transparent);
+	background-color: color-mix(in srgb, var(--fg) 40%, transparent);
 }
 
 .ghostbutton:disabled {
-	background: none;
-    cursor: default;
+	background-color: transparent;
+    border-color: color-mix(in srgb, var(--fg) 60%, transparent);
 }
 
-.size-2xl .grid2or4,
-.size-xl .grid2or4,
-.size-l .grid2or4 {
-    grid-template-columns: repeat(4, 1fr);
+.primarybutton {
+    background-color: var(--primary);
+    border-color: var(--fg);
 }
 
-.grid2or4 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1em;
+.primarybutton:hover {
+    background-color: color-mix(in srgb, var(--primary) 85%, black);
 }
 
-.grid2 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1em;
+.primarybutton:active {
+	background-color: color-mix(in srgb, var(--primary) 70%, black);
 }
 
-.size-2xl .grid1or2,
-.size-xl .grid1or2,
-.size-l .grid1or2 {
-    grid-template-columns: repeat(2, 1fr);
+.primarybutton:disabled {
+	background-color: color-mix(in srgb, var(--primary) 60%, transparent);
+    border-color: color-mix(in srgb, var(--fg) 60%, transparent);
 }
 
-.grid1or2 {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 1em;
+.secondarybutton {
+    background-color: var(--secondary);
+    border-color: var(--fg);
 }
+
+.secondarybutton:hover {
+    background-color: color-mix(in srgb, var(--secondary) 85%, black);
+}
+
+.secondarybutton:active {
+	background-color: color-mix(in srgb, var(--secondary) 70%, black);
+}
+
+.secondarybutton:disabled {
+	background-color: color-mix(in srgb, var(--secondary) 60%, transparent);
+    border-color: color-mix(in srgb, var(--fg) 60%, transparent);
+}
+
+/* +-------------+ */
+/* | FONT SIZING | */
+/* +-------------+ */
 
 .size-l,
 .size-xl,
@@ -131,4 +164,30 @@
 
 .size-xs {
     font-size: 10pt;
+}
+
+/* +-------------+ */
+/* | MISC        | */
+/* +-------------+ */
+
+.size-2xl .grid2or4,
+.size-xl .grid2or4,
+.size-l .grid2or4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid2,
+.size-2xl .grid1or2,
+.size-xl .grid1or2,
+.size-l .grid1or2,
+.grid2or4 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+}
+
+.grid1or2 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1em;
 }
