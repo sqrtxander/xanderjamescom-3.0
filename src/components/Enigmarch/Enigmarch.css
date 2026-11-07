@@ -2,32 +2,12 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-}
-
-.size-2xl .enigmarchpuzzle,
-.size-xl .enigmarchpuzzle {
-    flex-direction: row;
     gap: 1em;
-}
-
-.size-2xl .enigmarchpuzzle img,
-.size-xl .enigmarchpuzzle img {
-    width: calc(60% - 1em);
-}
-
-.size-2xl .enigmarchpuzzle .section,
-.size-xl .enigmarchpuzzle .section {
-    width: calc(40% - 1em);
-    overflow-wrap: break-word;
-    word-break: normal;
-}
-
-.enigmarchpuzzle .section {
-    margin-bottom: 2em;
 }
 
 .enigmarchpuzzle img {
     width: 100%;
+    max-width: 600px;
     height: auto;
     object-fit: contain;
     object-position: 0% 0%;
@@ -38,18 +18,18 @@
     margin-top: 0;
 }
 
-.enigmarchhint .hidden,
-.enigmarchhint .shown {
+.enigmarchhint.hidden,
+.enigmarchhint.shown {
     cursor: pointer;
     transition: background-color 0.2s;
 }
 
-.enigmarchhint .hidden {
+.enigmarchhint.hidden {
     color: var(--fg);
     background-color: var(--fg);
 }
 
-.enigmarchhint .shown {
+.enigmarchhint.shown {
     color: var(--fg);
     background-color: var(--bg);
 }

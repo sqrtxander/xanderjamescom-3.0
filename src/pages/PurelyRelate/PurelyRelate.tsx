@@ -35,7 +35,7 @@ function PurelyRelate() {
         <>
             {window.location.pathname.replace(/\/$/gim, "") ===
             "/purelyrelate" ? (
-                <div className="vstack wide">
+                <div className="vstack wide main-content">
                     <h1>Purely Relate</h1>
                     <p>
                         Here you will find questions I have written based on the

@@ -8,7 +8,7 @@ function Crossword() {
         <>
             {window.location.pathname.replace(/\/$/gim, "") ===
             "/crosswords" ? (
-                <div className="vstack wide">
+                <div className="vstack wide main-content">
                     <h1>Cryptic Crosswords</h1>
                     <div className="puzzlebuttonsgrid">
                         {crypticData.map((puz, i) => (

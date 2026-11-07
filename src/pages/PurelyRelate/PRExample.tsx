@@ -7,7 +7,7 @@ function PRExample() {
     const [flippedAll, setFlippedAll] = useState(false);
     const flipAll = () => setFlippedAll(!flippedAll);
     return (
-        <div>
+        <>
             <h1 id="overview">Overview and Examples</h1>
             <button className="ghostbutton flipallbutton" onClick={flipAll}>
                 <IconContext.Provider
@@ -150,7 +150,7 @@ function PRExample() {
                 relation="For example"
                 flippedAll={flippedAll}
             />
-        </div>
+        </>
     );
 }
 

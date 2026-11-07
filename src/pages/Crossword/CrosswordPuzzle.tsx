@@ -68,7 +68,7 @@ function CrosswordPuzzle({
             ) : loading ? (
                 <p>LOADING...</p>
             ) : (
-                <div className="vstack wide crosswordcontainer">
+                <div className="vstack wide main-content crosswordcontainer">
                     <h1>{crossword.name}</h1>
                     <MyCrossword
                         data={crossword}

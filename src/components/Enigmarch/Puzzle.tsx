@@ -15,13 +15,14 @@ function Puzzle({
 }) {
     return (
         <div className="enigmarchpuzzle">
+            <h2>Day {day}</h2>
             <img src={src} />
             <div className="vstack section">
-                <h2 style={{ marginTop: "0" }}>Day {day} Hints</h2>
+                <h3>Hints</h3>
                 {hints.map((h, i) => (
                     <Hint key={i} text={h} />
                 ))}
-                <h2>Day {day} Answer Checker</h2>
+                <h3>Answer Checker</h3>
                 <AnswerChecker answer={solution} />
             </div>
         </div>

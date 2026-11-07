@@ -15,8 +15,8 @@ function Example({
         <div className="enigmarchpuzzle">
             <img src={src} />
             <div className="vstack section">
-                <h2 style={{ marginTop: "0" }}>Hints</h2>
-                <p style={{ marginTop: "0" }}>Tap each hint to reveal</p>
+                <h2>Hints</h2>
+                <span>Tap each hint to reveal</span>
                 {hints.map((h, i) => (
                     <Hint key={i} text={h} />
                 ))}

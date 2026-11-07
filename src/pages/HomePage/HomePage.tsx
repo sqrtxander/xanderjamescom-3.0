@@ -3,24 +3,24 @@ import ProjectCard from "@/components/HomePage/ProjectCard";
 
 function HomePage() {
     return (
-        <div className="vstack wide">
+        <div className="vstack wide main-content">
             <h1>Hello,</h1>
             <div className="codeblock">
-                <p className="noleading pwd">~</p>
-                <p className="noleading codeline">
+                <span className="noleading pwd">~</span>
+                <span className="noleading codeline">
                     <span className="cmd">whoami</span>
-                </p>
-                <p className="noleading codeout">xander</p>
+                </span>
+                <span className="noleading codeout">xander</span>
 
-                <p className="noleading pwd">~</p>
-                <p className="noleading codeline">
+                <span className="noleading pwd">~</span>
+                <span className="noleading codeline">
                     <span className="cmd">cd</span> about
-                </p>
-                <p className="noleading pwd">~/about</p>
-                <p className="noleading codeline">
+                </span>
+                <span className="noleading pwd">~/about</span>
+                <span className="noleading codeline">
                     <span className="cmd">cat</span> README.md
-                </p>
-                <p className="noleading codeout">
+                </span>
+                <span className="noleading codeout">
                     # About Me
                     <br />
                     <br />- I am an undergraduate student studying mathematics
@@ -31,12 +31,12 @@ function HomePage() {
                     <br />- I can solve a Rubik's Cube blindfolded
                     <br />- I love both participating in and setting trivia,
                     especially where answers are connected
-                </p>
-                <p className="noleading pwd">~/about</p>
-                <p className="noleading codeline"></p>
+                </span>
+                <span className="noleading pwd">~/about</span>
+                <span className="noleading codeline"></span>
             </div>
             <h1>My Projects</h1>
-            <div className="grid2">
+            <div className="vstack">
                 <ProjectCard
                     name="EnigMarch"
                     href="/enigmarch"

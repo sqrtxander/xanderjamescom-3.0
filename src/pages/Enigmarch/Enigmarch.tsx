@@ -4,11 +4,11 @@ import Example from "@/components/Enigmarch/Example";
 
 function Enigmarch() {
     return (
-        <div className="vstack wide">
+        <div className="vstack wide main-content">
             {window.location.pathname.replace(/\/$/gim, "") === "/enigmarch" ? (
                 <>
                     <h1>EnigMarch</h1>
-                    <p>
+                    <span>
                         Each year, over the month of March, daily prompts are
                         released by the{" "}
                         <a href="https://enigmarch.com/">EnigMarch</a> team
@@ -17,7 +17,7 @@ function Enigmarch() {
                         challenging myself to write a puzzle for each prompt,
                         and typeset each puzzle in{" "}
                         <a href="https://typst.app/">Typst</a>.
-                    </p>
+                    </span>
                     <h1>My EnigMarch Puzzles</h1>
                     <div className="grid2or4">
                         <a href="enigmarch/2026" className="yearbutton">

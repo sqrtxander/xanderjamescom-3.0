@@ -5,11 +5,10 @@
 	display: flex;
     min-height: calc(100vh - 2em);
 	height: fit-content;
-    padding-bottom: 2em;
 	transition:
         background 0.3s,
         color 0.3s;
-	justify-content: top;
+	justify-content: start;
 	align-items: center;
 	flex-direction: column;
 }
@@ -17,16 +16,31 @@
 .vstack {
 	display: flex;
 	flex-direction: column;
+    gap: 1em;
+}
+
+.vstack > h1:first-child,
+.vstack > h2:first-child,
+.vstack > h3:first-child,
+.vstack > h4:first-child,
+.vstack > h5:first-child,
+.vstack > h6:first-child {
+    margin-top: 0;
 }
 
 .hstack {
 	display: flex;
 	flex-direction: row;
+    gap: 1em;
 }
 
 .wide {
     width: calc(100% - 2em);
     max-width: 800px;
+}
+
+.main-content {
+    padding: 1em 0;
 }
 
 .hcenter {
@@ -89,6 +103,18 @@
 .grid2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+}
+
+.size-2xl .grid1or2,
+.size-xl .grid1or2,
+.size-l .grid1or2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid1or2 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
     gap: 1em;
 }
 

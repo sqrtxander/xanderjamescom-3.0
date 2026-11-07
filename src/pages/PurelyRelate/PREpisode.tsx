@@ -88,7 +88,10 @@ function PREpisode() {
             ) : loading ? (
                 <p>LOADING...</p>
             ) : (
-                <div className="vstack wide">
+                <div
+                    className="vstack wide main-content"
+                    style={{ gap: "2em" }}
+                >
                     <h1>Purely Relate {episodeContent.title}</h1>
                     <button
                         className="ghostbutton flipallbutton"
