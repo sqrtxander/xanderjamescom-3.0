@@ -27,7 +27,7 @@ function AnswerCard({
     return (
         <button
             className={`answercard ${className || ""}`}
-            style={{ border: `2px solid ${borderColor || "var(--fg)"}` }}
+            style={{ borderColor: borderColor }}
             onClick={flip}
         >
             {flipped ? (

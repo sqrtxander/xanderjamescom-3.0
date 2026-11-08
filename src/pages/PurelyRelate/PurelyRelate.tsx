@@ -59,7 +59,7 @@ function PurelyRelate() {
                                     href={`purelyrelate/episode/${ep.id.toString().padStart(2, "0")}/`}
                                     className="episodebutton"
                                 >
-                                    <button className="ghostbutton episodebutton">
+                                    <button className="primarybutton episodebutton">
                                         {ep.title}
                                     </button>
                                 </a>

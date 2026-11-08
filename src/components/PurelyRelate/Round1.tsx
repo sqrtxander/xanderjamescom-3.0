@@ -27,7 +27,7 @@ function Round1({
                         front={`Reveal clue ${i + 1}`}
                         back={clue}
                         className="r1"
-                        borderColor="var(--blue)"
+                        borderColor="var(--fg)"
                         flippedAll={flippedAll}
                     />
                 ))}
@@ -35,7 +35,7 @@ function Round1({
                     front="Reveal relation"
                     back={relation}
                     explanation={explanation}
-                    borderColor="var(--purple)"
+                    borderColor="var(--fg)"
                     flippedAll={flippedAll}
                 />
             </div>

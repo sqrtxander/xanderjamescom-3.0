@@ -14,7 +14,7 @@ type round4Params = {
 function Round4({ relation, clues, flippedAll }: round4Params) {
     return (
         <div className="round4">
-            <LabelCard borderColor="var(--purple)" text={relation} />
+            <LabelCard text={relation} />
             {clues.map((clue, i) => (
                 <ClueCard
                     key={i}

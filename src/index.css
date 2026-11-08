@@ -1,10 +1,12 @@
 @import url("https://iosevka-webfonts.github.io/iosevka/Iosevka.css");
 
 :root {
-    --bg: #a8c69f;
+    --bg: #c6d8c0;
     --fg: #000000;
-    --primary: #baa5ff;
-    --secondary: #faa989;
+    --primary: #b185ff;
+    --on-primary: #000000;
+    --secondary: #f991cc;
+    --on-secondary:#000000;
 
     --header-height: 40px;
     --border-radius: 10px;

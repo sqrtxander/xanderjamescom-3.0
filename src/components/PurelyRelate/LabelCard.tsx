@@ -7,12 +7,9 @@ type labelCardProps = {
     style?: CSSProperties;
 };
 
-function LabelCard({ text, borderColor, style }: labelCardProps) {
+function LabelCard({ text, style }: labelCardProps) {
     return (
-        <div
-            className="labelcard"
-            style={{ ...{ border: `2px solid ${borderColor}` }, ...style }}
-        >
+        <div className="labelcard" style={style}>
             <pre>{text}</pre>
         </div>
     );

@@ -9,17 +9,16 @@ function PRExample() {
     return (
         <>
             <h1 id="overview">Overview and Examples</h1>
-            <button className="ghostbutton flipallbutton" onClick={flipAll}>
+            <button className="primarybutton flipallbutton" onClick={flipAll}>
                 <IconContext.Provider
                     value={{ style: { height: "2em", width: "2em" } }}
                 >
-                    {flippedAll ? <LuEyeClosed /> : <LuEye />}
-                    <p style={{ padding: "1em" }}> Flip all </p>
+                    <span style={{ paddingRight: "1em" }}> Flip all </span>
                     {flippedAll ? <LuEyeClosed /> : <LuEye />}
                 </IconContext.Provider>
             </button>
             <h2>Round 1: Relations</h2>
-            <ul style={{ listStyleType: "-" }}>
+            <ul>
                 <li>This round has six questions.</li>
                 <li>
                     Each question has four clues, revealed from left to right.
@@ -48,7 +47,7 @@ function PRExample() {
             />
 
             <h2>Round 2: Progressions</h2>
-            <ul style={{ listStyleType: "-" }}>
+            <ul>
                 <li>This round has six questions.</li>
                 <li>
                     Each question has three clues, revealed from left to right,
@@ -77,7 +76,7 @@ function PRExample() {
             />
 
             <h2>Round 3: Relating Surfaces</h2>
-            <ul style={{ listStyleType: "-" }}>
+            <ul>
                 <li>This round has two surfaces.</li>
                 <li>Each surface has sixteen clues.</li>
                 <li>
@@ -118,7 +117,7 @@ function PRExample() {
             />
 
             <h2>Round 4: Consonants Only</h2>
-            <ul style={{ listStyleType: "-" }}>
+            <ul>
                 <li>
                     This round has an undetermined number of sets of related
                     clues.

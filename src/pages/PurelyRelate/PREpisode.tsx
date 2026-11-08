@@ -94,14 +94,15 @@ function PREpisode() {
                 >
                     <h1>Purely Relate {episodeContent.title}</h1>
                     <button
-                        className="ghostbutton flipallbutton"
+                        className="primarybutton flipallbutton"
                         onClick={flipAll}
                     >
                         <IconContext.Provider
                             value={{ style: { height: "2em", width: "2em" } }}
                         >
-                            {flippedAll ? <LuEyeClosed /> : <LuEye />}
-                            <p style={{ padding: "1em" }}> Flip all </p>
+                            <span style={{ paddingRight: "1em" }}>
+                                Flip all
+                            </span>
                             {flippedAll ? <LuEyeClosed /> : <LuEye />}
                         </IconContext.Provider>
                     </button>

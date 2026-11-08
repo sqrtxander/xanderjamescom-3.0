@@ -28,7 +28,7 @@ function Round2({
                         back={clue}
                         frontClass={i === 3 ? "big" : undefined}
                         className="r2"
-                        borderColor="var(--blue)"
+                        borderColor="var(--fg)"
                         flippedAll={flippedAll}
                     />
                 ))}
@@ -36,7 +36,7 @@ function Round2({
                     front="Reveal relation"
                     back={relation}
                     explanation={explanation}
-                    borderColor="var(--purple)"
+                    borderColor="var(--fg)"
                     flippedAll={flippedAll}
                 />
             </div>

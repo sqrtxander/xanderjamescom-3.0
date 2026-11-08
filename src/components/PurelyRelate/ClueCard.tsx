@@ -29,7 +29,7 @@ function ClueCard({
         <button
             className={`cluecard ${className || ""} ${(!flipped && frontClass) || ""}`}
             onClick={flip}
-            style={{ border: `2px solid ${borderColor}` }}
+            style={{ borderColor: borderColor }}
         >
             <pre>{flipped ? back : front}</pre>
         </button>

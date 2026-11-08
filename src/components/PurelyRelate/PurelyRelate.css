@@ -1,3 +1,16 @@
+:root {
+    --pr-surface-1: #c2ffe4;
+    --pr-surface-2: #ffbdb4;
+    --pr-surface-3: #c2f1ff;
+    --pr-surface-4: #ffeeb3;
+    --pr-glyph-1: var(--fg);
+    --pr-glyph-2: var(--fg);
+    --pr-glyph-3: var(--fg);
+    --pr-glyph-4: var(--fg);
+    --pr-glyph-5: var(--fg);
+    --pr-glyph-6: var(--fg);
+}
+
 .cluecard.r1,
 .cluecard.r2 {
 	aspect-ratio: 7 / 4;
@@ -6,17 +19,16 @@
 .cluecard,
 .answercard,
 .surfacecard,
-.labelcard,
-.ghostborder {
-	border: 2px solid var(--fg);
-	border-radius: 10px;
+.labelcard {
+	border: var(--border-thickness) solid var(--fg);
+	border-radius: var(--border-radius);
 	width: 100%;
 	color: var(--fg);
 	display: flex;
 	text-align: center;
 	justify-content: center;
 	align-items: center;
-	background: none;
+	background-color: var(--primary);
 	transition: background 0.3s;
 	font-size: inherit;
     min-width: 0;
@@ -28,6 +40,12 @@
     padding-right: 1em;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
+}
+
+.answercard,
+.labelcard {
+    background-color: var(--secondary);
+    color: var(--on-secondary);
 }
 
 pre {
@@ -48,31 +66,26 @@ pre {
 }
 
 .cluecard:hover,
-.answercard:hover,
-.surfacecard:hover,
-.ghostborder:hover {
-	background: color-mix(in srgb, var(--fg) 20%, transparent);
-    cursor: pointer;
+.surfacecard:hover {
+	background-color: color-mix(in srgb, var(--primary) 85%, black);
+}
+
+.answercard:hover {
+	background-color: color-mix(in srgb, var(--secondary) 85%, black);
 }
 
 .cluecard:active,
-.answercard:active,
-.surfacecard:active,
-.ghostborder:active {
-	background: color-mix(in srgb, var(--fg) 40%, transparent);
+.surfacecard:active {
+	background-color: color-mix(in srgb, var(--primary) 70%, black);
+}
+
+.answercard:active {
+	background-color: color-mix(in srgb, var(--secondary) 70%, black);
 }
 
 .cluecard:disabled,
-.answercard:disabled,
-.surfacecard:disabled,
-.ghostborder:disabled {
-	background: none;
-    cursor: default;
-}
-
-.round3buttons > .ghostborder:disabled {
-	border: 2px solid var(--grey);
-    transition: border 0.2s;
+.answercard:disabled {
+	background-color: color-mix(in srgb, var(--primary) 85%, transparent);
 }
 
 .explanation {
@@ -89,13 +102,6 @@ pre {
 .round3buttons > button {
     aspect-ratio: 4/1;
     width: calc((100% - 3em)/4);
-}
-
-
-.round1,
-.round2,
-.round3,
-.round4 {
 }
 
 .round1question,

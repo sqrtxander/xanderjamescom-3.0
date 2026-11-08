@@ -6,7 +6,7 @@ type clueCardProps = {
     onClick: () => void;
     disabled: boolean;
     className?: string;
-    borderColor?: string;
+    backgroundColor?: string;
     style?: CSSProperties;
 };
 
@@ -15,7 +15,7 @@ function SurfaceCard({
     onClick,
     disabled,
     className,
-    borderColor,
+    backgroundColor,
     style,
 }: clueCardProps) {
     return (
@@ -23,7 +23,7 @@ function SurfaceCard({
             className={`surfacecard ${className || ""}`}
             onClick={onClick}
             style={{
-                ...{ border: `2px solid ${borderColor || "var(--blue)"}` },
+                backgroundColor: backgroundColor,
                 ...style,
             }}
             disabled={disabled}

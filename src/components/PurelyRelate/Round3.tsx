@@ -23,12 +23,12 @@ class RelatingSurface {
     state: cell[];
     groupsFound: number = 0;
     static groupColors: string[] = [
-        "var(--green)",
-        "var(--yellow)",
-        "var(--orange)",
-        "var(--pink)",
+        "var(--pr-surface-1)",
+        "var(--pr-surface-2)",
+        "var(--pr-surface-3)",
+        "var(--pr-surface-4)",
     ];
-    static defaultColor: string = "var(--blue)";
+    static defaultColor: string = "var(--primary)";
 
     constructor(groups: groups) {
         this.state = [];
@@ -217,7 +217,7 @@ function Round3({ glyph, groups, flippedAll }: round3Props) {
             renderedItems.push(
                 <SurfaceCard
                     key={i}
-                    borderColor={card.color}
+                    backgroundColor={card.color}
                     disabled={card.solved || card.disabled}
                     text={card.clue}
                     onClick={() => onClick(i)}
@@ -230,7 +230,6 @@ function Round3({ glyph, groups, flippedAll }: round3Props) {
                         front="Show relation"
                         back={surfaceRef.current.state[i].relation}
                         className="r3"
-                        borderColor="var(--purple)"
                         flippedAll={flippedAll}
                     />,
                 );
@@ -244,14 +243,14 @@ function Round3({ glyph, groups, flippedAll }: round3Props) {
             <Glyph glyphID={glyph} />
             <div className="round3buttons">
                 <button
-                    className="ghostborder"
+                    className="primarybutton"
                     onClick={solveSurface}
                     disabled={surfaceRef.current.isSolved()}
                 >
                     Solve
                 </button>
                 <button
-                    className="ghostborder"
+                    className="primarybutton"
                     onClick={resetSurface}
                     disabled={!surfaceRef.current.isSolved()}
                 >
