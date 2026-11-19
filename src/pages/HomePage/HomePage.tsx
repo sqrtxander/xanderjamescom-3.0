@@ -11,7 +11,7 @@ function HomePage() {
                     I am an undergraduate student studying mathematics and
                     information technology.
                 </li>
-                <li>I use Neovim as my main text editor on Arch Linux.</li>
+                <li>I use Neovim as my main text editor on NixOS.</li>
                 <li>I enjoy programming (when I have ideas).</li>
                 <li>I can solve a Rubik's cube blindfolded.</li>
                 <li>
