@@ -21,7 +21,7 @@ function Enigmarch() {
                     <h1>My EnigMarch Puzzles</h1>
                     <div className="grid2or4">
                         <a href="enigmarch/2026" className="yearbutton">
-                            <button className="ghostbutton full">2026</button>
+                            <button className="primarybutton full">2026</button>
                         </a>
                     </div>
                     <h1>My Personal Layout Example</h1>

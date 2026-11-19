@@ -26,7 +26,7 @@ function AnswerChecker({ answer }: { answer: string }) {
                         setChecked(false);
                     }}
                 />
-                <button type="submit" className="ghostbutton enigmarchcheck">
+                <button type="submit" className="primarybutton enigmarchcheck">
                     Check
                 </button>
             </form>

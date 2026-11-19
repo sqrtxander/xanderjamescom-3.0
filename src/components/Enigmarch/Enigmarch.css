@@ -15,11 +15,6 @@
 }
 
 .enigmarchhint {
-    margin-top: 0;
-}
-
-.enigmarchhint.hidden,
-.enigmarchhint.shown {
     cursor: pointer;
     transition: background-color 0.2s;
 }
@@ -37,9 +32,9 @@
 .enigmarchanswer {
     background-color: var(--bg);
     color: var(--fg);
-    border: 2px solid var(--fg);
-    border-radius: 10px;
-    width: calc(100% - 4em);
+    border: var(--border-thickness) solid var(--fg);
+    border-radius: var(--border-radius);
+    width: calc(100% - 2em - 2 * var(--border-thickness));
     padding: .5em 1em;
     margin-bottom: 0.5em;
     text-align: center;
@@ -54,16 +49,20 @@
 }
 
 .enigmarchfeedback {
-    border-radius: 10px;
+    border-radius: var(--border-radius);
     padding: .5em 1em;
-    width: calc(100% - 4em);
+    width: calc(100% - 2em - 2 * var(--border-thickness));
     text-align: center;
 }
 
 .enigmarchfeedback.correct {
-    border: 2px solid var(--green);
+    border: 2px solid var(--fg);
+    color: var(--on-success);
+    background-color: var(--success);
 }
 
 .enigmarchfeedback.incorrect {
-    border: 2px solid var(--red);
+    border: 2px solid var(--fg);
+    color: var(--on-error);
+    background-color: var(--error);
 }

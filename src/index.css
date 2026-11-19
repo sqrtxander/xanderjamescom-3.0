@@ -2,11 +2,21 @@
 
 :root {
     --bg: #c6d8c0;
-    --fg: #000000;
+    --fg: #1b231c;
+    --fg-muted: #3d4a3f;
+    --surface: #dde8d8;
+
     --primary: #b185ff;
-    --on-primary: #000000;
-    --secondary: #f991cc;
-    --on-secondary:#000000;
+    --on-primary: #1b231c;
+
+    --secondary: #4b2e83;
+    --on-secondary: #f3f6f0;
+
+    --error: #b3261e;
+    --on-error: #f3f6f0;
+
+    --success: #1f6b3a;
+    --on-success: #f3f6f0;
 
     --header-height: 40px;
     --border-radius: 10px;

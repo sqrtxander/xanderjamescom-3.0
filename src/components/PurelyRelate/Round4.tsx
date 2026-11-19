@@ -18,7 +18,6 @@ function Round4({ relation, clues, flippedAll }: round4Params) {
             {clues.map((clue, i) => (
                 <ClueCard
                     key={i}
-                    borderColor="var(--blue)"
                     front={clue.clue}
                     back={clue.answer}
                     flippedAll={flippedAll}
