@@ -1,14 +1,18 @@
 .MyMyCrosswordTheme .Clue--highlighted {
-	background-color: transparent;
-	border: 2px solid var(--blue);
-	border-radius: 10px;
+    background-color: color-mix(in srgb, var(--primary) 30%, white);
+    border: 2px solid var(--secondary);
 }
+
+.MyMyCrosswordTheme .Clue:not(.Clue--highlighted):hover {
+    background-color: color-mix(in srgb, var(--bg) 90%, black);
+}
+
 .MyMyCrosswordTheme .GridCell--highlighted .GridCell__rect {
-    fill: color-mix(in srgb, var(--blue) 30%, var(--grid-foreground));
+    fill: color-mix(in srgb, var(--primary) 30%, white);
 }
 
 .MyMyCrosswordTheme .GridCell--selected .GridCell__rect {
-    fill: var(--blue);
+    fill: var(--primary);
 }
 
 .MyMyCrosswordTheme .GridInput {
@@ -37,23 +41,23 @@
 }
 .MyMyCrosswordTheme .Clues__listHeader {
 	background-color: var(--bg);
-	border-bottom: 1px solid var(--grey);
+	border-bottom: 1px solid var(--surface-border);
 }
 
 .MyMyCrosswordTheme .DropdownButton__button {
-	background-color: transparent;
-	color: var(--fg);
-    border: 2px solid var(--pink);
+	background-color: var(--primary);
+	color: var(--on-primary);
+    border: 2px solid var(--fg);
     border-radius: 10px;
 }
 
 .MyMyCrosswordTheme .DropdownButton__button:hover,
 .MyMyCrosswordTheme .DropdownButton--expanded .DropdownButton__button {
-	background-color: color-mix(in srgb, var(--fg) 20%, transparent);
+    background-color: color-mix(in srgb, var(--primary) 85%, black);
 }
 
 .MyMyCrosswordTheme .DropdownButton__button:active {
-	background-color: color-mix(in srgb, var(--fg) 40%, transparent);
+    background-color: color-mix(in srgb, var(--primary) 70%, black);
 }
 
 .MyMyCrosswordTheme .DropdownButton__menu {
@@ -63,27 +67,35 @@
 }
 
 .MyMyCrosswordTheme .DropdownButton__menuItem {
-    color: var(--fg);
+    color: var(--on-primary);
+}
+
+.MyMyCrosswordTheme .DropdownButton__menuItem {
+    background-color: var(--primary);
 }
 
 .MyMyCrosswordTheme .DropdownButton__menuItem:not(:disabled):hover {
-	background-color: var(--bg-highlight);
+    background-color: color-mix(in srgb, var(--primary) 85%, black);
+}
+
+.MyMyCrosswordTheme .DropdownButton__menuItem:disabled {
+	background-color: color-mix(in srgb, var(--primary) 60%, transparent);
 }
 
 .MyMyCrosswordTheme .Button {
-	background-color: transparent;
-	color: var(--fg);
-    border: 2px solid var(--pink);
+	background-color: var(--primary);
+	color: var(--on-primary);
+    border: 2px solid var(--fg);
     border-radius: 10px;
 }
 
 .MyMyCrosswordTheme .Button:not(:disabled):hover,
 .MyMyCrosswordTheme .Button--filled:not(:disabled):hover {
-	background-color: color-mix(in srgb, var(--fg) 20%, transparent);
+    background-color: color-mix(in srgb, var(--primary) 85%, black);
 }
 
 .MyMyCrosswordTheme .Button:not(:disabled):active {
-	background-color: color-mix(in srgb, var(--fg) 40%, transparent);
+	background-color: color-mix(in srgb, var(--primary) 70%, black);
 }
 
 .MyMyCrosswordTheme .AnagramHelper__input,
@@ -97,7 +109,7 @@
 }
 
 .MyMyCrosswordTheme .AnagramHelper .SolutionDisplay__letter--populated {
-    background: var(--bg-highlight);
+    background-color: var(--primary);
 }
 
 .MyMyCrosswordTheme .DropdownButton__dropdownButtonIcon,
@@ -112,7 +124,8 @@
 }
 
 .MyMyCrosswordTheme .AnagramHelper {
-    border: 2px solid var(--bg-highlight);
+    border: 2px solid var(--surface-border);
+    background-color: var(--surface);
 }
 
 .infoBox {
